@@ -21,7 +21,7 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Framework: html-static
 - Developer mode: smart
 - Model mode: paid/manual
-- Active file: services/website-design.html
+- Active file: services/service-detail.html
 - Objective: mujhe ek service page create Website Design
 Packaging Design
 Brochure Design
@@ -37,6 +37,11 @@ is sabha me header or footer same to same mujhe home page wala chahiye ha
 - Next action: Continue this task from its isolated checkpoint and current workspace evidence.
 
 ## Touched files in this capsule
+- astrology.html
+- add-popup-script.ps1
+- contact.html
+- about.html
+- inquiry-popup.js
 - services/website-design.html
 - style.css
 - index.html
@@ -45,12 +50,17 @@ is sabha me header or footer same to same mujhe home page wala chahiye ha
 - services/service-detail.css
 
 ## Recent files in this workspace/window
-- services/website-design.html
 - services/service-detail.html
 - style.css
+- contact.html
+- about.html
+- index.html
+- astrology.html
+- add-popup-script.ps1
+- inquiry-popup.js
+- services/website-design.html
 - services/service-data.js
 - services/service-detail.css
-- index.html
 
 ## Hard rule
 If a file, goal, screenshot, terminal output, or decision is not connected to this capsule, do not use it for the current task.

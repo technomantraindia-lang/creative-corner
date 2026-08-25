@@ -43,6 +43,12 @@
           <a href="explainer-video.html">Explainer Video</a>
         </div>
       </div>
+      <a href="../astrology.html" class="nav-item" id="nav-astrology">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px; color: #f59e0b; vertical-align: middle;">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        Astrology
+      </a>
       <a href="../contact.html" class="nav-item" id="nav-contact">Contact</a>
     </nav>
 
@@ -58,13 +64,7 @@
         <div class="service-eyebrow-pill" id="service-eyebrow">OUR SERVICES &bull;</div>
         <h1 class="service-title serif-heading" id="service-hero-title"></h1>
         <p class="service-intro" id="service-intro"></p>
-
-        <div class="service-hero-proof">
-          <span>Strategy-led creative direction</span>
-          <span>Clean brand presentation</span>
-          <span>Ready for print, web, and launch</span>
-        </div>
-
+        
         <!-- Key point pills row -->
         <div class="hero-key-points" id="hero-key-points"></div>
 
@@ -91,10 +91,10 @@
     <!-- SECTION 2: SERVICE OVERVIEW -->
     <section class="service-overview-section">
       <div class="section-eyebrow">Service Overview</div>
+      <h2 class="section-title serif-heading">Service Overview</h2>
       
       <div class="service-overview-grid">
         <div class="overview-text">
-          <h2 class="section-title service-overview-title">Crafted For <span>Impact</span>,<br />Designed For <span>Results</span></h2>
           <p id="service-description"></p>
         </div>
         <div class="overview-cards" id="overview-highlight-cards"></div>
@@ -110,6 +110,13 @@
         </div>
         
         <div class="service-inclusions-grid" id="service-inclusions-grid"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: MIDDLE TEAM BANNER -->
+    <section class="service-middle-banner-section">
+      <div class="middle-banner-wrap">
+        <img src="../about_team.jpg" alt="Creative Corner Hub Team Collaboration" />
       </div>
     </section>
 
@@ -307,25 +314,17 @@
     const serviceSlug = 'explainer-video';
     const service = services[serviceSlug] || services['website-design'];
 
-    function formatHeroTitle(title) {
-      var words = title.split(' ');
-      if (words.length < 2) {
-        return title;
-      }
-      var splitIndex = Math.ceil(words.length / 2);
-      return words.slice(0, splitIndex).join(' ') + '<br />' + words.slice(splitIndex).join(' ');
-    }
-
     document.title = service.title + ' - Creative Corner Hub';
-    document.getElementById('service-eyebrow').textContent = "OUR SERVICES \u2022";
-    document.getElementById('service-hero-title').innerHTML = formatHeroTitle(service.title);
+    document.getElementById('service-eyebrow').textContent = "OUR SERVICES •";
+    document.getElementById('service-hero-title').textContent = service.title;
     document.getElementById('service-intro').textContent = service.intro;
     document.getElementById('service-description').textContent = service.description;
 
     const serviceImage = document.getElementById('service-image');
     serviceImage.src = service.image;
     serviceImage.alt = service.title;
-// Svg Icon Provider
+
+    // Svg Icon Provider
     function getSvgIcon(iconName, strokeColor) {
       strokeColor = strokeColor || "currentColor";
       const icons = {
@@ -468,5 +467,146 @@
       yearEl.textContent = new Date().getFullYear();
     }
   </script>
+
+  <!-- Inquiry Popup Modal -->
+  <div class="modal-overlay" id="inquiry-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+      
+      <!-- Form state -->
+      <div id="modal-form-state">
+        <div class="modal-header">
+          <h3>Inquire Now</h3>
+          <p>Tell us about your project requirements and we will get back to you within 24 hours.</p>
+        </div>
+        
+        <form id="modal-inquiry-form" onsubmit="event.preventDefault(); handleModalSubmit();">
+          <div class="modal-form-group">
+            <label for="modal-name">Full Name</label>
+            <input type="text" id="modal-name" class="modal-form-input" placeholder="Your Name" required />
+          </div>
+          
+          <div class="modal-form-group">
+            <label for="modal-email">Email Address</label>
+            <input type="email" id="modal-email" class="modal-form-input" placeholder="name@company.com" required />
+          </div>
+          
+          <div class="modal-form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input type="tel" id="modal-phone" class="modal-form-input" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+          
+          <div class="modal-form-group">
+            <label for="modal-service">Select Service</label>
+            <select id="modal-service" class="modal-form-input" style="padding-right: 28px; appearance: auto;" required>
+              <option value="" disabled selected>Choose a Service</option>
+              <option value="website-design">Website Design</option>
+              <option value="packaging-design">Packaging Design</option>
+              <option value="brochure-design">Brochure Design</option>
+              <option value="flyer-design">Flyer Designing</option>
+              <option value="banner-design">Banner Designing</option>
+              <option value="id-card-design">ID Card Design</option>
+              <option value="menu-card-design">Menu Card Design</option>
+              <option value="name-plate-design">Name Plate Design</option>
+              <option value="tshirt-design">T Shirt Designing</option>
+              <option value="explainer-video">Explainer Video</option>
+            </select>
+          </div>
+          
+          <div class="modal-form-group">
+            <label for="modal-message">Project Description</label>
+            <textarea id="modal-message" class="modal-form-input" placeholder="Briefly describe your project..." required></textarea>
+          </div>
+          
+          <button type="submit" class="modal-submit-btn">Send Inquiry</button>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div id="modal-success-state" class="modal-success-state">
+        <div class="success-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4>Inquiry Submitted!</h4>
+        <p>Thank you for reaching out. Our team will review your project details and contact you shortly.</p>
+        <button class="modal-submit-btn" onclick="closeInquiryModal()" style="background: #111325; box-shadow: none;">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal logic
+    function openInquiryModal(serviceValue) {
+      const modal = document.getElementById('inquiry-modal');
+      const formState = document.getElementById('modal-form-state');
+      const successState = document.getElementById('modal-success-state');
+      
+      if (modal) {
+        modal.classList.add('active');
+        formState.style.display = 'block';
+        successState.style.display = 'none';
+        document.getElementById('modal-inquiry-form').reset();
+        
+        if (serviceValue) {
+          const select = document.getElementById('modal-service');
+          if (select) {
+            select.value = serviceValue;
+          }
+        }
+      }
+    }
+
+    function closeInquiryModal() {
+      const modal = document.getElementById('inquiry-modal');
+      if (modal) {
+        modal.classList.remove('active');
+      }
+    }
+
+    function handleModalSubmit() {
+      document.getElementById('modal-form-state').style.display = 'none';
+      document.getElementById('modal-success-state').style.display = 'flex';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.inquiry-btn, .btn-premium-primary, .btn-cta-premium, .btn-premium').forEach(btn => {
+        const href = btn.getAttribute('href');
+        const hasInquiryClass = btn.classList.contains('inquiry-btn');
+        if (hasInquiryClass || (href && (href.includes('contact.html') || href === '#contact' || href === '#inquiry'))) {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let currentService = '';
+            if (typeof serviceSlug !== 'undefined') {
+              currentService = serviceSlug;
+            }
+            openInquiryModal(currentService);
+          });
+        }
+      });
+
+      const closeBtn = document.getElementById('modal-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeInquiryModal);
+      }
+
+      const modalOverlay = document.getElementById('inquiry-modal');
+      if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+          if (e.target === modalOverlay) {
+            closeInquiryModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeInquiryModal();
+        }
+      });
+    });
+  </script>
+  <script src="../inquiry-popup.js"></script>
 </body>
 </html>
