@@ -63,103 +63,26 @@ Project-scoped learning extracted through the unified quality gate. Current proj
       </
 ```
 
-## Pattern 2: Responsive carousel / slider · service-detail-bulk.css
+## Pattern 2: Responsive carousel / slider · service-detail-plant-care.html
 - Category: ui.carousel
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-:root{--sbs-green-dark:#1b4332;--sbs-green:#2d6a4f;--sbs-green-accent:#52b788;--sbs-green-bright:#7cb518;--sbs-green-pale:#e8f5e9;--sbs-green-soft:#f4f8f2;--sbs-beige:#f7f6f2;--sbs-white:#ffffff;--sbs-gray-100:#f3f5f3;--sbs-gray-400:#9ca3af;--sbs-gray-600:#4b5563;--sbs-gray-800:#1a1f2e;--sbs-font-serif:'Playfair Display',Georgia,serif;--sbs-font-sans:'Poppins',sans-serif;--sbs-pad-x:clamp(24px, 5vw, 80px);--sbs-shadow:0 8px 32px rgba(27, 67, 50, 0.1);--sbs-transition:0.35s cubic-bezier(0.4, 0, 0.2, 1)}body.service-bulk-page{font-family:var(--sbs-font-sans);font-size:calc(14px * var(--type-scale, 1.22));color:var(--sbs-gray-800);line-height:1.65;overflow-x:hidden;background:var(--sbs-white);-webkit-font-smoothing:antialiased}body.service-bulk-page .nav-list a.active{color:#7cb518}body.service-bulk-page .nav-list a.active::after{background:#7cb518}.sbs-sprite{position:absolute;width:0;height:0;overflow:hidden}.sbs-container{width:100%;max-width:100%;margin:0 auto;padding:0 var(--sbs-pad-x)}.sbs-svg-icon{display:block;flex-shrink:0;color:currentColor}.sbs-svg-icon--btn{width:18px;height:18px}.sbs-svg-icon--play{width:20px;height:20px}.sbs-svg-icon--check{width:14px;height:14px;color:var(--sbs-white)}.sbs-svg-icon--pill{width:22px;height:22px;color:var(--sbs-green)}.sbs-svg-icon--step{width:24px;height:24px;color:var(--sbs-green)}.sbs-label-leaf{width:22px;height:22px;object-fit:contain;flex-shrink:0}.sbs-label-leaf--center{display:block;margin:0 auto 10px}.sbs-icon-img{width:28px;height:28px;object-fit:contain;display:block}.sbs-section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--sbs-green-bright);margin-bottom:10px}.sbs-section-head{text-align:center;margin-bottom:clamp(28px,4vw,40px)}.sbs-section-head h2{font-family:var(--sbs-font-serif);font-size:clamp(26px, 3vw, 34px);font-weight:700;color:var(--sbs-green-dark);margin:0}.sbs-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;font-family:inherit;text-decoration:none;transition:transform var(--sbs-transition),box-shadow var(--sbs-transition),background var(--sbs-transition);white-space:nowrap}.sbs-btn-primary{background:linear-gradient(135deg,#1b4332,#2d6a4f);color:var(--sbs-white)}.sbs-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,67,50,.25)}.sbs-btn-video{background:var(--sbs-white);color:var(--sbs-green-dark);border:1.5px solid var(--sbs-green-dark)}.sbs-btn-video:hover{border-color:var(--sbs-green-accent);transform:translateY(-2px)}.sbs-btn-white{background:var(--sbs-white);color:var(--sbs-green-dark)}.sbs-btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}.sbs-btn-outline-white{background:0 0;color:var(--sbs-white);border:1.5px solid rgba(255,255,255,.85)}.sbs-btn-outline-white:hover{background:rgba(255,255,255,.1);transform:translateY(-2px)}.sbs-hero{position:relative;overflow:hidden;min-height:clamp(420px,42vw,520px);padding:clamp(120px,14vw,150px) 0 clamp(56px,7vw,72px);background:var(--sbs-white)}.sbs-hero-bg{positi
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Plant Care Service | Service Details | Baroda Roses Farm & Nursery</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><link rel="stylesheet" href="css/service-detail-plant-care.css"><link rel="stylesheet" href="css/mobile.css"></head><body class="service-plant-care-page" data-page="services"><div class="spc-cursor-glow" id="spcCursorGlow" aria-hidden="true"></div><svg xmlns="http://www.w3.org/2000/svg" class="spc-sprite" aria-hidden="true"><symbol id="spc-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="spc-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></symbol><symbol id="spc-whatsapp" viewBox="0 0 24 24"><path d="M12 3a8 8 0 00-6.9 12L3 21l6.2-2A8 8 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 10.5c.4 1.2 1.6 2.8 3.3 3.5 1 .4 1.8.2 2.4-.4l.6-.6a1 1 0 011.3-.1l1.5 1.1a1 1 0 01.2 1.4l-.8 1.1c-.6.8-1.6 1.2-2.7 1-2.2-.4-4.8-2.5-6.2-5.1-.8-1.5-.9-2.8-.3-3.7l.7-1a1 1 0 011.3-.3l1.5.8a1 1 0 01.4 1.2l-.4.9c-.2.5-.1.9.3 1.2z" fill="currentColor" stroke="none"/></symbol><symbol id="spc-chevron-l" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="spc-chevron-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="spc-prune" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><circle cx="6" cy="6" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="18" r="2" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol><symbol id="spc-fertilize" viewBox="0 0 24 24"><path d="M12 3c-2 4-6 6-6 10a6 6 0 0012 0c0-4-4-6-6-10z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="spc-pest" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 5V3M12 21v-2M5 12H3M21 12h-2M7 7l-1.5-1.5M18.5 18.5L17 17M7 17l-1.5 1.5M18.5 5.5L17 7" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol><symbol id="spc-soil" viewBox="0 0 24 24"><path d="M4 18h16M6 18c0-4 2.5-7 6-7s6 3 6 7" fill="none" stroke="currentColor" stroke-width="1
 ```
 
-## Pattern 3: Responsive carousel / slider · services.css
+## Pattern 3: Responsive carousel / slider · service-detail-terrace.html
 - Category: ui.carousel
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-:root{--sv-green-dark:#1b4332;--sv-green:#2d6a4f;--sv-green-accent:#52b788;--sv-green-bright:#7cb518;--sv-green-pale:#e8f5e9;--sv-white:#ffffff;--sv-gray-50:#f8f9fa;--sv-gray-100:#f0f2f0;--sv-gray-400:#9ca3af;--sv-gray-600:#6b7280;--sv-gray-800:#1f2937;--sv-shadow:0 4px 24px rgba(0, 0, 0, 0.08);--sv-shadow-lg:0 12px 40px rgba(0, 0, 0, 0.12);--sv-transition:0.3s ease;--sv-font-serif:'Playfair Display',Georgia,serif;--sv-font-sans:'Poppins',sans-serif;--sv-pad-x:clamp(24px, 5vw, 80px)}body.services-page{font-family:var(--sv-font-sans);font-size:calc(13px * var(--type-scale, 1.22));color:var(--sv-gray-800);line-height:1.65;overflow-x:hidden;background:var(--sv-white)}.sv-cta,.sv-hero,.sv-premium,.sv-process,.sv-testimonials,.sv-why{width:100%}.sv-sprite{position:absolute;width:0;height:0;overflow:hidden}.sv-svg-icon{display:block;flex-shrink:0;color:currentColor}.sv-svg-icon--btn{width:18px;height:18px}.sv-svg-icon--sm{width:14px;height:14px}.sv-svg-icon--play{width:20px;height:20px}.sv-container{width:100%;max-width:100%;margin:0 auto;padding:0 var(--sv-pad-x)}body.services-page .nav-list a.active{color:#7cb518}body.services-page .nav-list a.active::after{background:#7cb518}.sv-section-label{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--sv-green-bright);margin-bottom:14px}.sv-section-label--center{justify-content:center;width:100%}.sv-section-label--hero{color:var(--sv-green-bright)}.sv-section-label--light{color:var(--sv-green-accent)}.sv-label-leaf{width:22px;height:22px;object-fit:contain}.sv-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;font-size:14px;font-weight:600;border-radius:8px;border:none;cursor:pointer;font-family:inherit;transition:transform var(--sv-transition),box-shadow var(--sv-transition),background var(--sv-transition);white-space:nowrap}.sv-btn-primary{background:linear-gradient(135deg,#1b4332,#2d6a4f);color:var(--sv-white)}.sv-btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(27,67,50,.28)}.sv-btn-video{background:rgba(255,255,255,.12);color:var(--sv-white);border:1.5px solid rgba(255,255,255,.55)}.sv-btn-video:hover{background:rgba(255,255,255,.2)}.sv-btn-wa{background:var(--sv-white);color:var(--sv-green-dark);border:2px solid var(--sv-green-accent)}.sv-btn-wa:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.12)}.sv-btn-outline{background:0 0;color:var(--sv-white);border:1.5px solid rgba(255,255,255,.88)}.sv-btn-outline:hover{background:rgba(255,255,255,.1)}.sv-section-head{text-align:center;max-width:640px;margin:0 auto clamp(36px,5vw,52px)}.sv-section-head h2{font-family:var(--sv-font-serif);font-size:clamp(28px, 3.5vw, 38px);font-weight:700;color:var(--sv-green-dark);line-height:1.2;margin-bottom:12px}.sv-section-head--light .sv-section-desc,.sv-section-head--light h2{color:var(--sv-white);text-shadow:0 2px 16px rgba(0,0,0,.5)}.sv-section-desc{font-size:15px;color:var(--sv-gray-600);line-height:1.6;margin:0}.sv-hero{position:relative;min-height:clamp(520px,58vw,680px);display:flex;align-items:center;overflow:visible;padding-bottom:clamp(60px,8vw
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Terrace Gardening | Service Details | Baroda Roses Farm & Nursery</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><link rel="stylesheet" href="css/service-detail-terrace.css"><link rel="stylesheet" href="css/mobile.css"></head><body class="service-terrace-page" data-page="services"><div class="stg-cursor-glow" id="stgCursorGlow" aria-hidden="true"></div><svg xmlns="http://www.w3.org/2000/svg" class="stg-sprite" aria-hidden="true"><symbol id="stg-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="stg-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></symbol><symbol id="stg-whatsapp" viewBox="0 0 24 24"><path d="M12 3a8 8 0 00-6.9 12L3 21l6.2-2A8 8 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 10.5c.4 1.2 1.6 2.8 3.3 3.5 1 .4 1.8.2 2.4-.4l.6-.6a1 1 0 011.3-.1l1.5 1.1a1 1 0 01.2 1.4l-.8 1.1c-.6.8-1.6 1.2-2.7 1-2.2-.4-4.8-2.5-6.2-5.1-.8-1.5-.9-2.8-.3-3.7l.7-1a1 1 0 011.3-.3l1.5.8a1 1 0 01.4 1.2l-.4.9c-.2.5-.1.9.3 1.2z" fill="currentColor" stroke="none"/></symbol><symbol id="stg-chevron-l" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="stg-chevron-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="stg-setup" viewBox="0 0 24 24"><path d="M3 21h18M6 21V9l6-4 6 4v12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol><symbol id="stg-plants" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2 4 4 0 017 2c0 5.5-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="stg-soil" viewBox="0 0 24 24"><path d="M4 18h16M6 18c0-4 2.5-7 6-7s6 3 6 7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 11c1-2 2.5-3 4-3s3 1 4 3" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol><symbol id="stg-irrigation" viewBox="0 0 24 24"><path d="M12 3c-2 4-6 6-6 10a6 6 0 0012 0c0-4-4-6-6-10z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 20h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol><symbol id="stg-planters" viewBox="0 0 24 24"><path d="M8 14c0-3 2-5 4-5s4 2 4 5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6 14h12v2a2 2 0 01-2 2H8a2 2 0 01-2-2v-2z" fill=
 ```
 
-## Pattern 4: Styling / layout system · responsive.css
-- Category: ui.styling
+## Pattern 4: Responsive carousel / slider · service-detail-landscape.html
+- Category: ui.carousel
 - Quality: 95 · Status: approved
 Project-scoped learning extracted through the unified quality gate. Current project and explicit developer instructions always win.
 ```
-@media (max-width: 1200px) {
-  .site-footer__grid { grid-template-columns: 1fr 1fr 1fr; }
-  .marketplace-preview__hero {
-    grid-template-columns: 1fr;
-  }
-  .marketplace-preview__collage {
-    min-height: 300px;
-    order: -1;
-  }
-  .marketplace-preview__grid { grid-template-columns: 1fr 1fr; }
-  .tech-board__panel--wide { grid-column: span 12; }
-  .tech-board__panel { grid-column: span 6; }
-  .pillars-grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 1024px) {
-  .site-nav, .site-nav__actions .btn-ghost { display: none; }
-  .nav-toggle { display: flex; }
-  .hero--cinematic .hero__headline,
-  .hero--banner .hero__headline { font-size: clamp(2rem, 8vw, 2.75rem); }
-  .hero__content-wrap { padding-bottom: clamp(3rem, 8vh, 5rem); }
-  .hero--video .hero__video {
-    object-position: center 45%;
-  }
-  .journey-steps { grid-template-columns: repeat(2, 1fr); }
-  .audience-grid { grid-template-columns: 1fr 1fr; }
-  .integrity-layout,
-  .portfolio-showcase,
-  .media-split--tech { grid-template-columns: 1fr; }
-  .integrity-layout__image,
-  .portfolio-showcase__image { order: -1; min-height: 240px; }
-  .integrity-layout__image img,
-  .portfolio-showcase__image img { min-height: 240px; }
-  .why-grid--compact { grid-template-columns: 1fr 1fr; }
-  .tech-board__panel--wide { grid-column: span 12; }
-  .tech-board__panel { grid-column: span 6; }
-  .markets-split { grid-template-columns: 1fr; }
-  .markets-hub { order: -1; margin-inline: auto; }
-  .insights-preview__grid { grid-template-columns: 1fr; }
-  .media-split { grid-template-columns: 1fr; }
-  .media-split__image { order: -1; min-height: 220px; }
-  .auth-layout { grid-template-columns: 1fr; }
-  .auth-visual { display: none; }
-  .legal-layout { grid-template-columns: 1fr; }
-  .legal-toc { position: static; }
-  .marketplace-stats { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 768px) {
-  :root { --header-height: 72px; }
-  .site-footer__grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
-  .journey-steps { grid-template-columns: 1fr; }
-  .marketplace-preview__grid { grid-template-columns: 1fr; }
-  .audience-grid { grid-template-columns: 1fr; }
-  .why-grid { grid-template-columns: 1fr; }
-  .integrity-grid { grid-template-columns: 1fr; }
-  .integrity-step--wide { grid-column: auto; }
-  .portfolio-board__grid { grid-template-columns: 1fr; }
-  .tech-board { grid-template-columns: 1fr; }
-  .tech-board__panel,
-  .tech-board__panel--wide { grid-column: span 1; }
-  .pillars-grid { grid-template-columns: 1fr; }
-  .marketplace-filters { grid-template-columns: 1fr; }
-  .marketplace-stats { grid-template-columns: 1fr; }
-  .projects-grid { grid-template-columns: 1fr; }
-  .trust-strip__list { gap: 2rem; padding-bottom: 0.5rem; }
-  .hero { min-height: auto; padding-block: calc(var(--header-height) + 1.5rem) 3rem; }
-  .btn { min-height: 44px; }
-  .compare-drawer { max-height: 85vh; }
-}
-
-@media (max-width: 520px) {
-  .site-footer__grid { grid-template-columns: 1fr; }
-  .hero__actions { flex-direction: column; }
-  .hero__actions .btn { width: 100%; }
-  .cta-section__actions { flex-direction: column; }
-  .cta-section__actions .btn { width: 100%; }
-  .cookie-banner__inner { flex-direction: 
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Landscape Design | Service Details | Baroda Roses Farm & Nursery</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"><link rel="stylesheet" href="css/service-detail-landscape.css"><link rel="stylesheet" href="css/mobile.css"></head><body class="service-landscape-page" data-page="services"><div class="sl-cursor-glow" id="slCursorGlow" aria-hidden="true"></div><svg xmlns="http://www.w3.org/2000/svg" class="sl-sprite" aria-hidden="true"><symbol id="sl-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="sl-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M10 8l6 4-6 4V8z" fill="currentColor"/></symbol><symbol id="sl-whatsapp" viewBox="0 0 24 24"><path d="M12 3a8 8 0 00-6.9 12L3 21l6.2-2A8 8 0 1012 3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 10.5c.4 1.2 1.6 2.8 3.3 3.5 1 .4 1.8.2 2.4-.4l.6-.6a1 1 0 011.3-.1l1.5 1.1a1 1 0 01.2 1.4l-.8 1.1c-.6.8-1.6 1.2-2.7 1-2.2-.4-4.8-2.5-6.2-5.1-.8-1.5-.9-2.8-.3-3.7l.7-1a1 1 0 011.3-.3l1.5.8a1 1 0 01.4 1.2l-.4.9c-.2.5-.1.9.3 1.2z" fill="currentColor" stroke="none"/></symbol><symbol id="sl-chevron-l" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="sl-chevron-r" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol><symbol id="sl-home" viewBox="0 0 24 24"><path d="M4 11l8-7 8 7v9H4v-9z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 20v-6h6v6" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="sl-value" viewBox="0 0 24 24"><path d="M5 19V9M10 19V5M15 19v-7M20 19V11" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 19h17" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="sl-health" viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2 4 4 0 017 2c0 5.5-7 10-7 10z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol><symbol id="sl-calm" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 20v-1a5 5 0 0110 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 12c1 1 2.5 1 4 0M16 12c-1 1-2.5 1-4 0" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol><symbol id="sl-energy" viewBox="0 0 24 24"
 ```

@@ -27,22 +27,40 @@ body {
 .navbar {
   display: flex;
   align-items: center;
-  height: 84px;
-  padding: 0 34px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid #ececec;
-  border-radius: 0 0 18px 18px;
+  height: 86px;
+  padding: 0 38px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 255, 0.88)),
+    radial-gradient(circle at 8% 0%, rgba(83, 104, 255, 0.08), transparent 28%),
+    radial-gradient(circle at 90% 0%, rgba(255, 129, 69, 0.08), transparent 30%);
+  border: 1px solid rgba(226, 232, 240, 0.82);
+  border-top: 0;
+  border-radius: 0 0 24px 24px;
   position: sticky;
   top: 0;
   z-index: 999;
-  max-width: 1540px;
+  max-width: 1510px;
   margin: 0 auto;
-  backdrop-filter: blur(14px);
+  box-shadow:
+    0 18px 55px rgba(15, 23, 42, 0.08),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(18px);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  right: 34px;
+  bottom: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(83, 104, 255, 0.32), rgba(255, 129, 69, 0.24), transparent);
+  pointer-events: none;
 }
 
 /* LOGO */
 .nav-logo-area {
-  width: 220px;
+  width: 230px;
   flex-shrink: 0;
   border-right: 0;
   height: 100%;
@@ -55,12 +73,20 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 8px 12px;
+  border-radius: 16px;
   text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.logo:hover {
+  background: rgba(255, 255, 255, 0.68);
+  transform: translateY(-1px);
 }
 
 .logo-img {
-  width: 132px;
-  height: 66px;
+  width: 122px;
+  height: 58px;
   object-fit: contain;
   display: block;
 }
@@ -80,7 +106,7 @@ body {
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 14px;
   flex: 1;
   justify-content: center;
   padding-left: 0;
@@ -90,29 +116,123 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 82px;
-  height: 42px;
+  min-width: 74px;
+  height: 44px;
   border-radius: 999px;
   font-size: 15px;
-  font-weight: 600;
-  color: #303033;
+  font-weight: 750;
+  color: #303544;
   text-decoration: none;
   position: relative;
   white-space: nowrap;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .nav-item:hover {
-  background: #f3f3f1;
-  color: #111;
+  background: rgba(83, 104, 255, 0.08);
+  color: #5368ff;
   transform: translateY(-1px);
+  box-shadow: none;
 }
 
 .nav-item.active {
-  background: #111;
+  min-width: 96px;
+  background:
+    linear-gradient(135deg, #111325 0%, #1b1f35 52%, #5368ff 100%);
   color: #fff;
-  font-weight: 700;
+  font-weight: 850;
   text-decoration: none;
+  box-shadow:
+    0 14px 28px rgba(17, 19, 37, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+}
+
+.nav-item.active:hover {
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 36px rgba(83, 104, 255, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.nav-dropdown {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-dropdown-toggle::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 8px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  min-width: 250px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(226, 232, 240, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 24px 65px rgba(15, 23, 42, 0.14);
+  backdrop-filter: blur(18px);
+  transform: translate(-50%, 12px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  z-index: 1000;
+}
+
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-dropdown:hover .nav-dropdown-toggle::after,
+.nav-dropdown:focus-within .nav-dropdown-toggle::after {
+  transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  padding: 11px 13px;
+  border-radius: 10px;
+  color: #242428;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  transition: background 0.18s ease, color 0.18s ease, transform 0.18s ease;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus {
+  background: linear-gradient(135deg, #111325, #5368ff);
+  color: #fff;
+  transform: translateX(2px);
+  outline: none;
 }
 
 /* NAV ACTIONS */
@@ -120,7 +240,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  width: 220px;
+  width: 230px;
   margin-left: auto;
 }
 
@@ -128,23 +248,23 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 124px;
-  height: 48px;
-  padding: 0 26px;
+  min-width: 132px;
+  height: 50px;
+  padding: 0 28px;
   border-radius: 999px;
-  background: #111;
+  background: linear-gradient(135deg, #111325, #171a27 58%, #5368ff);
   color: #fff;
   font-size: 15px;
   font-weight: 800;
   text-decoration: none;
-  box-shadow: 0 14px 30px rgba(17, 17, 17, 0.16);
+  box-shadow: 0 16px 34px rgba(17, 19, 37, 0.22);
   transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .inquiry-btn:hover {
-  background: #2a2a2a;
+  background: linear-gradient(135deg, #5368ff, #111325);
   transform: translateY(-2px);
-  box-shadow: 0 18px 36px rgba(17, 17, 17, 0.2);
+  box-shadow: 0 20px 42px rgba(83, 104, 255, 0.25);
 }
 
 /* ============================================
@@ -831,7 +951,7 @@ body {
    ============================================ */
 @media (max-width: 1100px) {
   .navbar {
-    padding: 0 40px;
+    padding: 0 24px;
   }
 
   .nav-logo-area {
@@ -914,12 +1034,26 @@ body {
     height: 76px;
     padding: 0 24px;
     justify-content: space-between;
-    border-radius: 0;
+    border-radius: 0 0 18px 18px;
+  }
+
+  .navbar::after {
+    left: 20px;
+    right: 20px;
   }
 
   .nav-logo-area {
     width: auto;
     padding-right: 0;
+  }
+
+  .logo {
+    padding: 4px 0;
+  }
+
+  .logo-img {
+    width: 108px;
+    height: 54px;
   }
 
   .nav-links {
@@ -1424,6 +1558,22 @@ body {
   padding: 20px 18px 24px;
   background: #fff;
   text-align: center;
+}
+
+/* Service detail page link */
+.svc-card-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #051b3c;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  transition: opacity 0.2s ease;
+}
+
+.svc-card-link:hover {
+  opacity: 0.7;
 }
 
 .svc-card .svc-card-title {
@@ -5616,7 +5766,10 @@ body {
 .contact-cta-section {
   position: relative;
   padding: 90px 24px;
-  background: linear-gradient(135deg, #7c2d12 0%, #c2410c 20%, #ea580c 40%, #e11d48 70%, #be185d 100%);
+  background:
+    radial-gradient(circle at 16% 18%, rgba(96, 165, 250, 0.28), transparent 30%),
+    radial-gradient(circle at 84% 20%, rgba(167, 139, 250, 0.26), transparent 32%),
+    linear-gradient(135deg, #07111f 0%, #102a56 36%, #3730a3 68%, #0e7490 100%);
   text-align: center;
   overflow: hidden;
   z-index: 2;
@@ -5633,7 +5786,7 @@ body {
   left: -60px;
   width: 350px;
   height: 350px;
-  background: radial-gradient(circle, rgba(251, 146, 60, 0.35) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.34) 0%, transparent 62%);
 }
 
 .contact-cta-glow-2 {
@@ -5641,7 +5794,7 @@ body {
   right: -60px;
   width: 400px;
   height: 400px;
-  background: radial-gradient(circle, rgba(236, 72, 153, 0.3) 0%, transparent 60%);
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.24) 0%, transparent 62%);
 }
 
 .contact-cta-container {
@@ -5676,7 +5829,7 @@ body {
 }
 
 .contact-cta-title span {
-  background: linear-gradient(135deg, #fbbf24, #fb923c, #fda4af);
+  background: linear-gradient(135deg, #93c5fd, #67e8f9, #c4b5fd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -5714,12 +5867,12 @@ body {
 
 .contact-cta-btn-primary {
   background: #ffffff;
-  color: #c2410c;
+  color: #1d4ed8;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .contact-cta-btn-primary:hover {
-  background: #fff7ed;
+  background: #eff6ff;
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }

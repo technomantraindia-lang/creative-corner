@@ -18,17 +18,38 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Workspace ID: tm-ws-35c7f9c798c1b01993d35461
 - Window ID: tm-win-7a4e8b5e7a1080c689dfb0ff
 - Project: Creative Corner
-- Framework: 
+- Framework: html-static
 - Developer mode: smart
 - Model mode: paid/manual
-- Active file: index.html
-- Objective: mujhe same to same ye section chahiye ha serice section ke niche home page par
+- Active file: services/website-design.html
+- Objective: mujhe ek service page create Website Design
+Packaging Design
+Brochure Design
+Flyer Designing
+Banner Designing
+ID Card Design
+Menu Card Design
+Name Plate Design
+T Shirt Designing
+Explainer Video
+is sabha me header or footer same to same mujhe home page wala chahiye ha
 - Blocker: none
 - Next action: Continue this task from its isolated checkpoint and current workspace evidence.
 
 ## Touched files in this capsule
+- services/website-design.html
+- style.css
+- index.html
+- services/service-detail.html
+- services/service-data.js
+- services/service-detail.css
 
 ## Recent files in this workspace/window
+- services/website-design.html
+- services/service-detail.html
+- style.css
+- services/service-data.js
+- services/service-detail.css
 - index.html
 
 ## Hard rule
