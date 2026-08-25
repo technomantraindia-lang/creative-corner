@@ -26,10 +26,10 @@
     </div>
 
     <nav class="nav-links">
-      <a href="#" class="nav-item active" id="nav-home">Home</a>
-      <a href="#" class="nav-item" id="nav-about">About</a>
-      <a href="#" class="nav-item" id="nav-services">Service</a>
-      <a href="#" class="nav-item" id="nav-contact">Contact</a>
+      <a href="index.html" class="nav-item active" id="nav-home">Home</a>
+      <a href="about.html" class="nav-item" id="nav-about">About</a>
+      <a href="index.html#services" class="nav-item" id="nav-services">Service</a>
+      <a href="contact.html" class="nav-item" id="nav-contact">Contact</a>
     </nav>
 
     <div class="nav-actions">
@@ -783,127 +783,163 @@
   </section>
 
   <!-- ===== PORTFOLIO SECTION ===== -->
-  <section class="portfolio-scroll-section" id="portfolio">
-    <div class="portfolio-sticky-wrapper">
-      <!-- Background glowing gradient blooms -->
-      <div class="port-deco-glow port-deco-glow-1"></div>
-      <div class="port-deco-glow port-deco-glow-2"></div>
+  <section class="portfolio-section" id="portfolio">
+    <!-- Background glowing gradient blooms -->
+    <div class="port-deco-glow port-deco-glow-1"></div>
+    <div class="port-deco-glow port-deco-glow-2"></div>
 
-      <div class="portfolio-header">
-        <div class="port-badge">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
-            stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-            <line x1="8" y1="21" x2="16" y2="21"></line>
-            <line x1="12" y1="17" x2="12" y2="21"></line>
-          </svg>
-          Portfolio
+    <div class="portfolio-header">
+      <div class="port-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+          <line x1="8" y1="21" x2="16" y2="21"></line>
+          <line x1="12" y1="17" x2="12" y2="21"></line>
+        </svg>
+        Portfolio
+      </div>
+      <h2 class="port-title">Explore Our <span class="port-title-accent">Real Works</span></h2>
+    </div>
+
+    <!-- Category Tabs Navigation Bar -->
+    <div class="portfolio-categories">
+      <button class="port-cat-btn active" data-category="jewellery">Jewellery & Fashion</button>
+      <button class="port-cat-btn" data-category="corporate">Corporate & Tech</button>
+      <button class="port-cat-btn" data-category="food">Food & Retail</button>
+      <button class="port-cat-btn" data-category="others">Others</button>
+    </div>
+
+    <!-- Responsive Grid of Logo Cards -->
+    <div class="portfolio-grid" id="portfolio-grid">
+      <!-- Item 1: Jewellery -->
+      <div class="port-grid-card show-anim" data-category="jewellery">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (1).jpeg" alt="Anupam Jewellers Logo">
         </div>
-        <h2 class="port-title">Explore Our <span class="port-title-accent">Real Works</span></h2>
+        <div class="port-grid-info">
+          <h3>Anupam Jewellers</h3>
+          <p>Traditional Jewellery Brand</p>
+        </div>
+      </div>
+      
+      <!-- Item 2: Corporate -->
+      <div class="port-grid-card show-anim" data-category="corporate">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (2).jpeg" alt="Rivyaan Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Rivyaan IT Solutions</h3>
+          <p>Modern Corporate Brand</p>
+        </div>
       </div>
 
-      <div class="portfolio-horizontal-container">
-        <div class="portfolio-track">
-          <!-- Project 1 -->
-          <div class="port-card">
-            <div class="port-card-num">01</div>
-            <div class="port-img-wrap">
-              <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&auto=format&fit=crop&q=80"
-                alt="SmartCity Traffic Solution" class="port-img">
-              <div class="port-hover-overlay">
-                <span class="port-view-btn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <span class="port-card-tag">Web Development</span>
-            <h3 class="port-card-title">SmartCity Traffic Solution</h3>
-            <p class="port-card-desc">AI-powered sensors reduced downtown traffic congestion by 35% weekly.</p>
-            <div class="port-card-date">August 23, 2025</div>
-          </div>
+      <!-- Item 3: Food -->
+      <div class="port-grid-card show-anim" data-category="food">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-05 at 11.08.53 (1).jpeg" alt="Amrit Chai Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Amrit Chai</h3>
+          <p>Cafe & Retail Branding</p>
+        </div>
+      </div>
 
-          <!-- Project 2 -->
-          <div class="port-card">
-            <div class="port-card-num">02</div>
-            <div class="port-img-wrap">
-              <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&auto=format&fit=crop&q=80"
-                alt="ShopEasy E-Commerce Platform" class="port-img">
-              <div class="port-hover-overlay">
-                <span class="port-view-btn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <span class="port-card-tag">Web Development</span>
-            <h3 class="port-card-title">ShopEasy E-Commerce Platform</h3>
-            <p class="port-card-desc">Boosted online sales 200% with lightning-fast, mobile-friendly checkout flows.</p>
-            <div class="port-card-date">August 23, 2025</div>
-          </div>
+      <!-- Item 4: Jewellery -->
+      <div class="port-grid-card show-anim" data-category="jewellery">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-22 at 17.03.06.jpeg" alt="Anupam Jewellers Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Anupam Jewellers</h3>
+          <p>Exclusive Gold Branding</p>
+        </div>
+      </div>
 
-          <!-- Project 3 -->
-          <div class="port-card">
-            <div class="port-card-num">03</div>
-            <div class="port-img-wrap">
-              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&auto=format&fit=crop&q=80"
-                alt="MediConnect Patient Portal" class="port-img">
-              <div class="port-hover-overlay">
-                <span class="port-view-btn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <span class="port-card-tag">App Development</span>
-            <h3 class="port-card-title">MediConnect Patient Portal</h3>
-            <p class="port-card-desc">Streamlined virtual doctor consultations and secure patient medical records.</p>
-            <div class="port-card-date">July 12, 2025</div>
-          </div>
+      <!-- Item 5: Corporate -->
+      <div class="port-grid-card show-anim" data-category="corporate">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (3).jpeg" alt="Rivyaan IT Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Rivyaan Tech</h3>
+          <p>Typography Identity</p>
+        </div>
+      </div>
 
-          <!-- Project 4 -->
-          <div class="port-card">
-            <div class="port-card-num">04</div>
-            <div class="port-img-wrap">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80"
-                alt="EcoEnergy Smart Dashboard" class="port-img">
-              <div class="port-hover-overlay">
-                <span class="port-view-btn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <span class="port-card-tag">UI/UX Design</span>
-            <h3 class="port-card-title">EcoEnergy Smart Dashboard</h3>
-            <p class="port-card-desc">Real-time solar panel performance tracking dashboard for eco-friendly households.
-            </p>
-            <div class="port-card-date">June 28, 2025</div>
-          </div>
+      <!-- Item 6: Food -->
+      <div class="port-grid-card show-anim" data-category="food">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (4).jpeg" alt="Food & Spices Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Spice Kingdom</h3>
+          <p>Food & Grocery Branding</p>
+        </div>
+      </div>
 
-          <!-- Project 5 -->
-          <div class="port-card">
-            <div class="port-card-num">05</div>
-            <div class="port-img-wrap">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=80"
-                alt="Apex Fintech PayFlow" class="port-img">
-              <div class="port-hover-overlay">
-                <span class="port-view-btn">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M7 17L17 7M17 7H7M17 7V17" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <span class="port-card-tag">Product Design</span>
-            <h3 class="port-card-title">Apex Fintech PayFlow</h3>
-            <p class="port-card-desc">Modern cross-border digital payments platform with minimal transaction fees.</p>
-            <div class="port-card-date">May 14, 2025</div>
-          </div>
+      <!-- Item 7: Others -->
+      <div class="port-grid-card show-anim" data-category="others">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (12).jpeg" alt="Academy Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Creative Academy</h3>
+          <p>Education & School Identity</p>
+        </div>
+      </div>
+
+      <!-- Item 8: Others -->
+      <div class="port-grid-card show-anim" data-category="others">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (6).jpeg" alt="Aura Health Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Aura Wellness</h3>
+          <p>Healthcare & Clinic Branding</p>
+        </div>
+      </div>
+
+      <!-- Item 9: Jewellery -->
+      <div class="port-grid-card show-anim" data-category="jewellery">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (8).jpeg" alt="Anupam Jewellers Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Anupam Jewellers</h3>
+          <p>Square Brand Mark</p>
+        </div>
+      </div>
+
+      <!-- Item 10: Corporate -->
+      <div class="port-grid-card show-anim" data-category="corporate">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-22 at 17.03.07 (1).jpeg" alt="Bharat Brand Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Bharat Group</h3>
+          <p>Logistics & Tech Identity</p>
+        </div>
+      </div>
+
+      <!-- Item 11: Food -->
+      <div class="port-grid-card show-anim" data-category="food">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-06 at 14.17.18 (13).jpeg" alt="Chai Cafe Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Chai Corner</h3>
+          <p>Restaurant Identity</p>
+        </div>
+      </div>
+
+      <!-- Item 12: Others -->
+      <div class="port-grid-card show-anim" data-category="others">
+        <div class="port-grid-img-wrap">
+          <img src="CCH/WhatsApp Image 2026-08-22 at 17.03.10.jpeg" alt="Services Logo">
+        </div>
+        <div class="port-grid-info">
+          <h3>Creative Solutions</h3>
+          <p>Consulting & Advisory Group</p>
         </div>
       </div>
     </div>
@@ -1911,13 +1947,14 @@
         <div class="footer-links-col">
           <h5 class="footer-col-title">Quick Links</h5>
           <ul class="footer-links-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#why-choose">Why Us</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contact-cta">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#why-choose">Why Us</a></li>
+            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
 
@@ -2030,36 +2067,48 @@
     // Init
     setActive(1);
 
-    // Pinned Horizontal Scroll logic for Portfolio
-    function initPortfolioScroll() {
-      const section = document.querySelector('.portfolio-scroll-section');
-      const track = document.querySelector('.portfolio-track');
-      if (!section || !track) return;
+    // Portfolio Category Filtering logic
+    function initPortfolioFilter() {
+      const buttons = document.querySelectorAll('.port-cat-btn');
+      const cards = document.querySelectorAll('.port-grid-card');
+      
+      function filterCategory(category) {
+        buttons.forEach(btn => {
+          if (btn.getAttribute('data-category') === category) {
+            btn.classList.add('active');
+          } else {
+            btn.classList.remove('active');
+          }
+        });
 
-      const handleScroll = () => {
-        const rect = section.getBoundingClientRect();
-        const viewportHeight = window.innerHeight;
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          if (cardCat === category) {
+            card.classList.remove('hide');
+            // Trigger repaint to restart animation
+            card.style.animation = 'none';
+            card.offsetHeight; /* trigger reflow */
+            card.style.animation = null;
+            card.classList.add('show-anim');
+          } else {
+            card.classList.add('hide');
+            card.classList.remove('show-anim');
+          }
+        });
+      }
 
-        // Total scroll range where section is pinned (from top hitting top of screen to bottom hitting bottom of screen)
-        const totalScrollRange = rect.height - viewportHeight;
-        if (totalScrollRange <= 0) return;
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const cat = btn.getAttribute('data-category');
+          filterCategory(cat);
+        });
+      });
 
-        // Calculate progress (0 to 1) dynamically based on rect.top position
-        let progress = -rect.top / totalScrollRange;
-        progress = Math.max(0, Math.min(1, progress));
-
-        // Calculate maxScroll dynamically so it is always correct even with lazy-loaded images
-        const maxScroll = track.scrollWidth - track.parentElement.clientWidth;
-        track.style.transform = `translateX(${-progress * maxScroll}px)`;
-      };
-
-      window.addEventListener('scroll', handleScroll, { passive: true });
-      window.addEventListener('resize', handleScroll);
-      // Run once on load to initialize position
-      handleScroll();
+      // Initialize with Jewellery & Fashion
+      filterCategory('jewellery');
     }
 
-    initPortfolioScroll();
+    initPortfolioFilter();
 
     // FAQ Accordion logic
     function initFaqAccordion() {
