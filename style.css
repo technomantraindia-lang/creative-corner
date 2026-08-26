@@ -4305,6 +4305,157 @@ body.nav-lock {
   }
 }
 
+/* Mobile footer redesign */
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 54px 0 28px;
+  }
+
+  .footer-container {
+    padding: 0 16px;
+  }
+
+  .footer-middle {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px 14px;
+    padding: 0 0 32px;
+  }
+
+  .footer-links-col {
+    gap: 12px;
+    min-width: 0;
+  }
+
+  .footer-links-col:first-child,
+  .footer-contact-col {
+    grid-column: 1 / -1;
+    padding: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.035);
+  }
+
+  .footer-brand-area {
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .footer-logo-img {
+    width: 116px;
+    max-height: 54px;
+  }
+
+  .footer-brand-desc {
+    max-width: 320px;
+    margin: 8px auto 12px !important;
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+
+  .footer-socials {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-social-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer-col-title {
+    margin-bottom: 8px;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+  }
+
+  .footer-col-title::after {
+    width: 28px;
+  }
+
+  .footer-links-list {
+    gap: 9px;
+  }
+
+  .footer-links-list a {
+    font-size: 13.5px;
+    line-height: 1.25;
+  }
+
+  .footer-contact-col {
+    gap: 14px;
+  }
+
+  .footer-contact-col .footer-col-title {
+    margin-bottom: 2px;
+  }
+
+  .footer-contact-item {
+    gap: 12px;
+    padding: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.035);
+  }
+
+  .footer-contact-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+  }
+
+  .footer-contact-item small {
+    font-size: 10px;
+    letter-spacing: 0.7px;
+  }
+
+  .footer-contact-item a,
+  .footer-contact-item span {
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .footer-bottom {
+    gap: 14px;
+    padding-top: 24px;
+  }
+
+  .footer-copyright {
+    font-size: 12.5px;
+    line-height: 1.45;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 16px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 12.5px;
+  }
+}
+
+@media (max-width: 420px) {
+  .footer-container {
+    padding: 0 14px;
+  }
+
+  .footer-middle {
+    gap: 16px 12px;
+  }
+
+  .footer-links-col:first-child,
+  .footer-contact-col {
+    padding: 16px;
+  }
+
+  .footer-links-list a {
+    font-size: 13px;
+  }
+}
+
 /* ============================================
    STATS COUNTER SECTION
    ============================================ */
