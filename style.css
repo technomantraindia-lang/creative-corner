@@ -192,6 +192,18 @@ body {
   z-index: 1000;
 }
 
+/* Invisible hover bridge to prevent menu from closing when cursor crosses the 8px top gap */
+.nav-dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  right: 0;
+  height: 12px;
+  background: transparent;
+}
+
+
 .nav-dropdown:hover .nav-dropdown-menu,
 .nav-dropdown:focus-within .nav-dropdown-menu {
   opacity: 1;

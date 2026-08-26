@@ -650,7 +650,7 @@
       <div class="svc-track" id="svcTrack">
 
         <!-- Card 1: Website Design -->
-        <div class="svc-card" data-index="0" onclick="setActive(0)">
+        <div class="svc-card" data-index="0" onclick="handleCardClick(0)">
           <div class="svc-card-img">
             <img src="website_design.jpg" alt="Website Design" />
           </div>
@@ -662,7 +662,7 @@
         </div>
 
         <!-- Card 2: Packaging Design -->
-        <div class="svc-card svc-card-active" data-index="1" onclick="setActive(1)">
+        <div class="svc-card svc-card-active" data-index="1" onclick="handleCardClick(1)">
           <div class="svc-card-img">
             <img src="packaging_design.jpg" alt="Packaging Design" />
           </div>
@@ -674,7 +674,7 @@
         </div>
 
         <!-- Card 3: Brochure Design -->
-        <div class="svc-card" data-index="2" onclick="setActive(2)">
+        <div class="svc-card" data-index="2" onclick="handleCardClick(2)">
           <div class="svc-card-img">
             <img src="brochure_design.jpg" alt="Brochure Design" />
           </div>
@@ -686,7 +686,7 @@
         </div>
 
         <!-- Card 4: Flyer Designing -->
-        <div class="svc-card" data-index="3" onclick="setActive(3)">
+        <div class="svc-card" data-index="3" onclick="handleCardClick(3)">
           <div class="svc-card-img">
             <img src="flyer_design.jpg" alt="Flyer Designing" />
           </div>
@@ -698,7 +698,7 @@
         </div>
 
         <!-- Card 5: Banner Designing -->
-        <div class="svc-card" data-index="4" onclick="setActive(4)">
+        <div class="svc-card" data-index="4" onclick="handleCardClick(4)">
           <div class="svc-card-img">
             <img src="banner_design.jpg" alt="Banner Designing" />
           </div>
@@ -709,7 +709,7 @@
         </div>
 
         <!-- Card 6: ID Card Design -->
-        <div class="svc-card" data-index="5" onclick="setActive(5)">
+        <div class="svc-card" data-index="5" onclick="handleCardClick(5)">
           <div class="svc-card-img">
             <img src="id_card_design.jpg" alt="ID Card Design" />
           </div>
@@ -721,7 +721,7 @@
         </div>
 
         <!-- Card 7: Menu Card Design -->
-        <div class="svc-card" data-index="6" onclick="setActive(6)">
+        <div class="svc-card" data-index="6" onclick="handleCardClick(6)">
           <div class="svc-card-img">
             <img src="menu_card_design.jpg" alt="Menu Card Design" />
           </div>
@@ -732,7 +732,7 @@
         </div>
 
         <!-- Card 8: Name Plate Design -->
-        <div class="svc-card" data-index="7" onclick="setActive(7)">
+        <div class="svc-card" data-index="7" onclick="handleCardClick(7)">
           <div class="svc-card-img">
             <img src="name_plate_design.jpg" alt="Name Plate Design" />
           </div>
@@ -744,7 +744,7 @@
         </div>
 
         <!-- Card 9: T shirt Designing -->
-        <div class="svc-card" data-index="8" onclick="setActive(8)">
+        <div class="svc-card" data-index="8" onclick="handleCardClick(8)">
           <div class="svc-card-img">
             <img src="tshirt_design.jpg" alt="T shirt Designing" />
           </div>
@@ -755,7 +755,7 @@
         </div>
 
         <!-- Card 10: Explainer video -->
-        <div class="svc-card" data-index="9" onclick="setActive(9)">
+        <div class="svc-card" data-index="9" onclick="handleCardClick(9)">
           <div class="svc-card-img">
             <img src="explainer_video.jpg" alt="Explainer video" />
           </div>
@@ -1916,6 +1916,14 @@
       body.appendChild(link);
     });
     const dots = document.querySelectorAll('.svc-dot');
+
+    function handleCardClick(idx) {
+      if (activeIdx === idx) {
+        window.location.href = 'services/' + serviceSlugs[idx] + '.html';
+      } else {
+        setActive(idx);
+      }
+    }
 
     function setActive(idx) {
       activeIdx = idx;
