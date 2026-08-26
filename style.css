@@ -4146,7 +4146,7 @@ body.nav-lock {
 }
 
 /* Quick links layout */
-.footer-links-col:nth-child(2) .footer-links-list {
+.footer-links-col:nth-child(3) .footer-links-list {
   grid-template-columns: 1fr;
 }
 
