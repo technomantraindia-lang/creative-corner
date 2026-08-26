@@ -1,0 +1,2299 @@
+/* ==========================================================================
+   ASTROLOGY PAGE STYLES (VEDIC LOGO THEME - GOLD & LIGHT)
+   ========================================================================== */
+
+/* Variables */
+:root {
+  --gold-primary: #8b5cf6;
+  --gold-hover: #7c3aed;
+  --gold-light: #ede9fe;
+  --gold-glow: rgba(139, 92, 246, 0.2);
+  --astro-dark: #070514;
+  --text-dark: #cbd5e1;
+  --text-light: #94a3b8;
+  --card-bg: rgba(22, 16, 48, 0.5);
+  --border-color: rgba(255, 255, 255, 0.08);
+}
+
+.astro-body {
+  background-color: #050312;
+  color: #e2e8f0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Serif Font Heading Utility */
+.astro-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.astro-gold-accent {
+  background: linear-gradient(135deg, #60a5fa, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+/* Section Header Utilities */
+.astro-section-header {
+  text-align: center;
+  margin-bottom: 55px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.astro-section-eyebrow {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 750;
+  color: #a78bfa;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.astro-section-title {
+  font-size: clamp(32px, 3.8vw, 44px);
+  font-weight: 850;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -1.2px;
+}
+
+/* HERO SECTION */
+.astro-hero {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1774 / 887;
+  background: url('banner.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+}
+
+.astro-stars {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(1.5px 1.5px at 10% 20%, rgba(255, 255, 255, 0.45), transparent),
+    radial-gradient(2px 2px at 40% 75%, rgba(251, 191, 36, 0.45), transparent),
+    radial-gradient(1.5px 1.5px at 80% 30%, rgba(255, 255, 255, 0.35), transparent),
+    radial-gradient(2px 2px at 90% 80%, rgba(251, 191, 36, 0.4), transparent);
+  background-size: 280px 280px;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.astro-hero-container {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  max-width: 1160px;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.astro-hero-content {
+  text-align: left;
+}
+
+.astro-hero h1 {
+  font-size: clamp(40px, 4.5vw, 56px);
+  line-height: 1.15;
+  font-weight: 900;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+  color: #ffffff; /* White title matching screenshot */
+}
+
+.astro-hero p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #94a3b8; /* Light silver description */
+  max-width: 580px;
+  margin-bottom: 34px;
+}
+
+/* Hero actions and buttons */
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 38px;
+}
+
+.hero-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 54px;
+  padding: 0 30px;
+  border-radius: 14px;
+  font-size: 14.5px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-btn-primary {
+  background: #fbbf24; /* Solid Gold primary button */
+  color: #020412;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.25);
+}
+
+.hero-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(251, 191, 36, 0.4);
+}
+
+.hero-btn-secondary {
+  border: 1.5px solid rgba(251, 191, 36, 0.6); /* Gold-tinted border secondary button */
+  color: #ffffff;
+  background: transparent;
+}
+
+.hero-btn-secondary:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.hero-btn-secondary svg {
+  color: #fbbf24;
+}
+
+/* Small Stats Row */
+.hero-small-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px 28px;
+  max-width: 500px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 30px;
+}
+
+.small-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.small-stat-icon-wrap {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(251, 191, 36, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.small-stat-info {
+  text-align: left;
+}
+
+.small-stat-info strong {
+  display: block;
+  font-size: 17px;
+  font-weight: 850;
+  color: #ffffff;
+}
+
+.small-stat-info span {
+  font-size: 11.5px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* Floating Logo Showcase */
+.astro-hero-showcase {
+  position: relative;
+  width: 540px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showcase-grid-dots {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 180px;
+  height: 180px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.45;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* 3D Slanted Orbit Rings matching the Saturn-style cosmic mockup */
+.showcase-orbit-ring-1 {
+  position: absolute;
+  width: 480px;
+  height: 190px;
+  border: 1.5px solid rgba(251, 191, 36, 0.15);
+  border-radius: 50%;
+  transform: rotate(-15deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.showcase-orbit-ring-2 {
+  position: absolute;
+  width: 480px;
+  height: 190px;
+  border: 1.2px dashed rgba(251, 191, 36, 0.08);
+  border-radius: 50%;
+  transform: rotate(20deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.showcase-orbit-ring-2::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 50%;
+}
+
+/* Orbit Planet Glow Dots */
+.orbit-planet-dot {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fbbf24;
+  box-shadow: 0 0 10px #fbbf24, 0 0 20px rgba(251, 191, 36, 0.8);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.orbit-planet-dot.dot-1 {
+  top: 18%;
+  left: 15%;
+  animation: orbit-shimmer-1 4s ease-in-out infinite;
+}
+
+.orbit-planet-dot.dot-2 {
+  bottom: 22%;
+  right: 12%;
+  animation: orbit-shimmer-2 5s ease-in-out infinite;
+}
+
+@keyframes orbit-shimmer-1 {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@keyframes orbit-shimmer-2 {
+  0%, 100% { opacity: 1; transform: scale(1.2); }
+  50% { opacity: 0.6; transform: scale(0.95); }
+}
+
+.floating-card {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), 0 5px 15px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 12px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: bob-up-down 6s ease-in-out infinite;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+  z-index: 3;
+}
+
+@keyframes bob-up-down {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating-card:hover {
+  transform: scale(1.12) !important;
+  box-shadow: 0 20px 45px rgba(251, 191, 36, 0.25);
+  border-color: #fbbf24;
+  z-index: 25;
+}
+
+.floating-card svg {
+  max-height: 52px;
+  margin-bottom: 8px;
+}
+
+.floating-card span {
+  font-size: 9.5px;
+  font-weight: 850;
+  color: #0f172a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* Center card Astroger - PERFECT CIRCLE WITH CUSTOM KEYFRAMES TO PREVENT TRANSLATE OVERRIDE */
+.floating-card.card-center {
+  background: radial-gradient(circle, #0e1633 0%, #030616 100%);
+  border: 2px solid #fbbf24;
+  width: 220px; /* Slightly enlarged for prominent visual balance */
+  height: 220px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: bob-up-down-center 7s ease-in-out infinite;
+  box-shadow: 0 0 45px rgba(251, 191, 36, 0.4), inset 0 0 20px rgba(251, 191, 36, 0.2);
+  z-index: 10;
+  border-radius: 50% !important;
+}
+
+@keyframes bob-up-down-center {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50% { transform: translate(-50%, -50%) translateY(-10px); }
+}
+
+.floating-card.card-center:hover {
+  transform: translate(-50%, -52%) scale(1.08) !important;
+}
+
+.floating-card.card-center span {
+  color: #fbbf24;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+
+/* Symmetrical hexagon surrounding cards placement */
+.card-qubix {
+  left: 51px;
+  top: 100px;
+  animation-delay: 0.4s;
+}
+
+.card-nexora {
+  left: 215px;
+  top: 5px;
+  animation-delay: 1.2s;
+}
+
+.card-greenova {
+  left: 379px;
+  top: 100px;
+  animation-delay: 0.8s;
+}
+
+.card-bloomi {
+  left: 379px;
+  top: 290px;
+  animation-delay: 1.6s;
+}
+
+.card-fitlife {
+  left: 215px;
+  top: 385px;
+  animation-delay: 0.2s;
+}
+
+.card-royalove {
+  left: 51px;
+  top: 290px;
+  animation-delay: 1.8s;
+}
+
+/* STATS BANNER SECTION */
+.astro-stats-banner {
+  background: #06091b; /* Dark backdrop card matching mockup */
+  border-radius: 24px;
+  padding: 26px 36px;
+  max-width: 1160px;
+  margin: 60px auto -60px; /* Margins to make it overlap the bottom edge of the hero */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  position: relative;
+  z-index: 15; /* high z-index to overlay next section */
+  border: 1px solid rgba(255, 255, 255, 0.06); /* Soft border divider */
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.astro-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #ffffff;
+  padding: 12px 18px;
+  border: 1.5px solid transparent;
+  border-radius: 18px;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+}
+
+/* Custom separator lines that fade out on hover to avoid overlap clashes */
+.astro-stat-item::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.12);
+  transition: opacity 0.2s ease;
+}
+
+.astro-stat-item:last-child::after {
+  display: none;
+}
+
+/* Hide separator line on hover of current or next item */
+.astro-stat-item:hover::after,
+.astro-stat-item:hover + .astro-stat-item::after {
+  opacity: 0;
+}
+
+/* Hover glow card border state on ALL items */
+.astro-stat-item:hover {
+  border-color: rgba(251, 191, 36, 0.45);
+  background: rgba(251, 191, 36, 0.08);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+.astro-stat-icon-wrap {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbbf24;
+  font-size: 20px;
+  transition: transform 0.25s ease;
+}
+
+.astro-stat-item:hover .astro-stat-icon-wrap {
+  transform: scale(1.1);
+}
+
+.astro-stat-info h4 {
+  font-size: 24px;
+  font-weight: 850;
+  line-height: 1.1;
+  margin-bottom: 2px;
+  color: #ffffff;
+}
+
+.astro-stat-info p {
+  font-size: 10.5px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  margin: 0;
+}
+/* CONSULTATION FORM SECTION */
+.astro-form-section {
+  padding: 100px 24px;
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  z-index: 1;
+}
+
+/* Starry background overlay hidden on light mode */
+.astro-stars-bg {
+  display: none;
+}
+
+/* Atmosphere/horizon glow hidden on light mode */
+.astro-horizon-glow {
+  display: none;
+}
+
+/* Centered Header Styles */
+.astro-form-header-center {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.astro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1.5px solid rgba(124, 58, 237, 0.25);
+  background: rgba(124, 58, 237, 0.06);
+  color: #7c3aed;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.badge-star {
+  width: 13px;
+  height: 13px;
+  color: #7c3aed;
+}
+
+.astro-form-title {
+  font-size: clamp(34px, 4.2vw, 48px);
+  line-height: 1.2;
+  font-weight: 850;
+  color: #0f172a;
+  margin: 0 auto 16px auto;
+  letter-spacing: -1.2px;
+  text-align: center;
+  max-width: 800px;
+}
+
+.astro-gold-text {
+  background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 900;
+}
+
+.astro-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1160px;
+  margin: 0 auto;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* Left Column content */
+.astro-form-info {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Vedic Info Card (Left Column) */
+.astro-info-card {
+  background: #ffffff;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: 28px;
+  padding: 44px 38px;
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.04);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.info-card-header {
+  text-align: left;
+}
+
+.info-card-eyebrow {
+  display: block;
+  font-size: 11px;
+  font-weight: 750;
+  color: #7c3aed;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+
+.info-card-title {
+  font-size: 25px;
+  font-weight: 850;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: -0.8px;
+}
+
+.info-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-card-list li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.list-dot {
+  color: #8b5cf6;
+  font-size: 16px;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.list-text {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #475569;
+  text-align: left;
+}
+
+.list-text strong {
+  color: #0f172a;
+  display: block;
+  font-size: 14.5px;
+  font-weight: 750;
+  margin-bottom: 2px;
+}
+
+/* Astrological Wheel Wrapper & Animation */
+.astro-wheel-wrapper {
+  max-width: 210px;
+  width: 100%;
+  margin: 10px auto 0 auto;
+  align-self: center;
+}
+
+.astro-wheel-svg {
+  width: 100%;
+  height: auto;
+  animation: spin-slow 180s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Right Column - Glassmorphic Form Card */
+.astro-form-card {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid rgba(139, 92, 246, 0.15);
+  border-radius: 28px;
+  padding: 56px 44px 44px 44px;
+  box-shadow: 0 20px 50px rgba(139, 92, 246, 0.08);
+}
+
+/* Overlapping Compass Badge */
+.astro-card-badge {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  background: #ffffff;
+  border: 1.5px solid #8b5cf6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.2);
+  z-index: 10;
+}
+
+.badge-compass-icon {
+  width: 44px;
+  height: 44px;
+  color: #3b82f6;
+}
+
+/* Form Layout Grid */
+.astro-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px 20px;
+}
+
+.astro-form-full {
+  grid-column: span 2;
+}
+
+.astro-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.astro-form-group label {
+  font-size: 11px;
+  font-weight: 750;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  text-align: left;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label-icon {
+  width: 12px;
+  height: 12px;
+  color: #8b5cf6;
+}
+
+/* Input wrappers with inline prefix icons */
+.astro-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-inline-icon {
+  position: absolute;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  color: #94a3b8;
+  pointer-events: none;
+  transition: color 0.25s ease;
+  z-index: 2;
+}
+
+/* Inputs styling */
+.astro-form-input {
+  width: 100%;
+  height: 54px;
+  border-radius: 12px;
+  border: 1.5px solid #e2e8f0;
+  padding: 0 16px 0 48px;
+  font-size: 14.5px;
+  color: #0f172a;
+  background: #f8fafc;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.02);
+  z-index: 1;
+}
+
+.astro-form-input::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus state */
+.astro-form-input:focus {
+  border-color: rgba(139, 92, 246, 0.55);
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.1), inset 0 1px 2px rgba(0, 0, 0, 0.02);
+  outline: none;
+}
+
+.astro-input-wrapper:focus-within .input-inline-icon {
+  color: #8b5cf6;
+}
+
+/* Custom styling for date/time Webkit indicators */
+.astro-form-input::-webkit-calendar-picker-indicator {
+  filter: invert(0.2) sepia(1) saturate(2) hue-rotate(240deg);
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.astro-form-input::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+/* Submit Button styling */
+.astro-submit-btn {
+  width: 100%;
+  height: 56px;
+  border: none;
+  background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #4f46e5 100%);
+  color: #ffffff;
+  font-size: 15.5px;
+  font-weight: 800;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(124, 58, 237, 0.2);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn-star-icon {
+  width: 18px;
+  height: 18px;
+  color: #ffffff;
+}
+
+.astro-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(124, 58, 237, 0.35);
+}
+
+.astro-submit-btn:active {
+  transform: translateY(1px);
+}
+
+/* Trust Badges Container and Elements */
+.astro-trust-container {
+  grid-column: span 2;
+  margin-top: 70px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 45px;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.astro-trust-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1 1 210px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.trust-badge-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(139, 92, 246, 0.15);
+  background: rgba(139, 92, 246, 0.05);
+  color: #7c3aed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+}
+
+.trust-badge-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.trust-badge-item:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139, 92, 246, 0.35);
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(139, 92, 246, 0.08);
+}
+
+.trust-badge-item:hover .trust-badge-icon-wrap {
+  background: #7c3aed;
+  color: #ffffff;
+  border-color: #7c3aed;
+  transform: rotate(8deg) scale(1.05);
+  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.25);
+}
+
+/* Animate inner SVG shapes to turn white on hover */
+.trust-badge-item:hover .trust-badge-icon * {
+  stroke: #ffffff !important;
+}
+
+.trust-badge-item:hover .trust-badge-icon circle[fill],
+.trust-badge-item:hover .trust-badge-icon path[fill] {
+  fill: #ffffff !important;
+}
+
+.trust-badge-info h5 {
+  color: #0f172a;
+  font-size: 13.5px;
+  font-weight: 750;
+  margin: 0 0 3px 0;
+  text-align: left;
+}
+
+.trust-badge-info p {
+  color: #64748b;
+  font-size: 11px;
+  line-height: 1.4;
+  margin: 0;
+  text-align: left;
+}
+
+/* Form Section Responsive Styling */
+@media (max-width: 991px) {
+  .astro-form-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  
+  .astro-form-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0;
+  }
+  
+  .astro-form-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .astro-trust-badges {
+    justify-content: center;
+    gap: 32px 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .astro-form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .astro-form-full {
+    grid-column: span 1;
+  }
+  
+  .astro-form-card {
+    padding: 44px 24px 30px 24px;
+  }
+  
+  .astro-submit-btn {
+    font-size: 14.5px;
+  }
+  
+  .astro-badge {
+    margin-bottom: 20px;
+  }
+  
+  .trust-badge-item {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* Astrological Wheel Wrapper & Animation */
+.astro-wheel-wrapper {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.astro-wheel-svg {
+  width: 100%;
+  height: auto;
+  animation: spin-slow 180s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* LOGO REMEDIAL SECTION */
+.remedial-section {
+  padding: 100px 24px;
+  background: radial-gradient(circle at 75% 50%, #1e133c 0%, #080517 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.remedial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  max-width: 1160px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.remedial-text h2 {
+  font-size: 40px;
+  font-weight: 850;
+  letter-spacing: -1.5px;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+.remedial-text p {
+  color: #94a3b8;
+  font-size: 16.5px;
+  line-height: 1.8;
+  margin-bottom: 26px;
+}
+
+.remedial-points {
+  list-style: none;
+  padding: 0;
+}
+
+.remedial-points li {
+  font-size: 15.5px;
+  font-weight: 600;
+  color: #cbd5e1;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.remedial-points li::before {
+  content: "✦";
+  color: #8b5cf6;
+  font-size: 20px;
+}
+
+.remedial-svg-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remedial-svg {
+  filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.45));
+  animation: float-slow 8s ease-in-out infinite;
+  overflow: visible;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* Orbiting planet animations for Yantra visual */
+.orbit-inner {
+  transform-origin: 100px 100px;
+  animation: orbit-spin-clockwise 10s linear infinite;
+}
+
+.orbit-outer {
+  transform-origin: 100px 100px;
+  animation: orbit-spin-counter 16s linear infinite;
+}
+
+@keyframes orbit-spin-clockwise {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes orbit-spin-counter {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* PLANETS SECTION */
+.planets-section {
+  padding: 100px 24px;
+  background: #ffffff;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.planets-section .astro-section-eyebrow {
+  color: #7c3aed;
+}
+
+.planets-section .astro-section-title {
+  color: #0f172a;
+}
+
+.planets-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.planet-card {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 22px;
+  padding: 38px 32px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+}
+
+.planet-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #7c3aed, #3b82f6);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Custom planet-specific hover glows based on astrological color energy */
+/* 1. Sun (Gold/Orange) */
+.planet-card:nth-child(1):hover {
+  border-color: rgba(245, 158, 11, 0.45);
+  box-shadow: 0 15px 35px rgba(245, 158, 11, 0.12), 0 0 15px rgba(245, 158, 11, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(1):hover::before { opacity: 1; }
+
+/* 2. Moon (Soft Blue/Silver) */
+.planet-card:nth-child(2):hover {
+  border-color: rgba(14, 165, 233, 0.45);
+  box-shadow: 0 15px 35px rgba(14, 165, 233, 0.12), 0 0 15px rgba(14, 165, 233, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(2):hover::before { 
+  background: linear-gradient(90deg, #0284c7, #38bdf8);
+  opacity: 1; 
+}
+
+/* 3. Mars (Ruby Red) */
+.planet-card:nth-child(3):hover {
+  border-color: rgba(239, 68, 68, 0.45);
+  box-shadow: 0 15px 35px rgba(239, 68, 68, 0.12), 0 0 15px rgba(239, 68, 68, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(3):hover::before { 
+  background: linear-gradient(90deg, #dc2626, #f87171);
+  opacity: 1; 
+}
+
+/* 4. Mercury (Emerald Green) */
+.planet-card:nth-child(4):hover {
+  border-color: rgba(16, 185, 129, 0.45);
+  box-shadow: 0 15px 35px rgba(16, 185, 129, 0.12), 0 0 15px rgba(16, 185, 129, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(4):hover::before { 
+  background: linear-gradient(90deg, #16a34a, #34d399);
+  opacity: 1; 
+}
+
+/* 5. Jupiter (Yellow/Gold) */
+.planet-card:nth-child(5):hover {
+  border-color: rgba(234, 179, 8, 0.45);
+  box-shadow: 0 15px 35px rgba(234, 179, 8, 0.12), 0 0 15px rgba(234, 179, 8, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(5):hover::before { 
+  background: linear-gradient(90deg, #eab308, #fef08a);
+  opacity: 1; 
+}
+
+/* 6. Venus (Pink/Rose) */
+.planet-card:nth-child(6):hover {
+  border-color: rgba(236, 72, 153, 0.45);
+  box-shadow: 0 15px 35px rgba(236, 72, 153, 0.12), 0 0 15px rgba(236, 72, 153, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(6):hover::before { 
+  background: linear-gradient(90deg, #db2777, #f472b6);
+  opacity: 1; 
+}
+
+/* 7. Saturn (Slate Blue) */
+.planet-card:nth-child(7):hover {
+  border-color: rgba(148, 163, 184, 0.45);
+  box-shadow: 0 15px 35px rgba(148, 163, 184, 0.12), 0 0 15px rgba(148, 163, 184, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(7):hover::before { 
+  background: linear-gradient(90deg, #475569, #94a3b8);
+  opacity: 1; 
+}
+
+/* 8. Rahu (Violet) */
+.planet-card:nth-child(8):hover {
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.12), 0 0 15px rgba(139, 92, 246, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(8):hover::before { 
+  background: linear-gradient(90deg, #7c3aed, #a78bfa);
+  opacity: 1; 
+}
+
+/* 9. Ketu (Indigo) */
+.planet-card:nth-child(9):hover {
+  border-color: rgba(99, 102, 241, 0.45);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.12), 0 0 15px rgba(99, 102, 241, 0.05);
+  transform: translateY(-6px);
+}
+.planet-card:nth-child(9):hover::before { 
+  background: linear-gradient(90deg, #4f46e5, #818cf8);
+  opacity: 1; 
+}
+
+.planet-header {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.planet-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  transition: transform 0.3s ease;
+}
+
+.planet-card:hover .planet-icon {
+  transform: scale(1.1);
+}
+
+/* Planet-specific icon colors */
+.planet-card:nth-child(1) .planet-icon { background: rgba(245, 158, 11, 0.08); color: #d97706; }
+.planet-card:nth-child(2) .planet-icon { background: rgba(14, 165, 233, 0.08); color: #0284c7; }
+.planet-card:nth-child(3) .planet-icon { background: rgba(239, 68, 68, 0.08); color: #dc2626; }
+.planet-card:nth-child(4) .planet-icon { background: rgba(16, 185, 129, 0.08); color: #16a34a; }
+.planet-card:nth-child(5) .planet-icon { background: rgba(234, 179, 8, 0.08); color: #eab308; }
+.planet-card:nth-child(6) .planet-icon { background: rgba(236, 72, 153, 0.08); color: #db2777; }
+.planet-card:nth-child(7) .planet-icon { background: rgba(100, 116, 139, 0.08); color: #475569; }
+.planet-card:nth-child(8) .planet-icon { background: rgba(139, 92, 246, 0.08); color: #7c3aed; }
+.planet-card:nth-child(9) .planet-icon { background: rgba(99, 102, 241, 0.08); color: #4f46e5; }
+
+.planet-title h3 {
+  font-size: 19px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.planet-title span {
+  font-size: 11px;
+  color: #7c3aed;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  display: block;
+  text-align: left;
+}
+
+.planet-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #475569;
+  text-align: left;
+  margin: 0;
+}
+
+/* WHAT YOU GET (DELIVERABLES) */
+.deliverables-section {
+  padding: 150px 24px 100px 24px;
+  background: radial-gradient(circle at 30% 60%, #110c36 0%, #050312 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.deliverable-item {
+  background: rgba(22, 16, 48, 0.5);
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 34px;
+  display: flex;
+  gap: 22px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.deliverable-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 15px 35px rgba(139, 92, 246, 0.08);
+}
+
+.deliverable-num {
+  font-size: 38px;
+  font-weight: 900;
+  color: rgba(59, 130, 246, 0.35);
+  line-height: 1;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.15);
+}
+
+.deliverable-item:hover .deliverable-num {
+  color: #3b82f6;
+  text-shadow: 0 0 15px rgba(59, 130, 246, 0.35);
+}
+
+.deliverable-content h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.deliverable-content p {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #94a3b8;
+  text-align: left;
+  margin: 0;
+}
+
+/* LOGO PACKAGES */
+.packages-section {
+  padding: 100px 24px;
+  background: #090619;
+  position: relative;
+  z-index: 1;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.package-card {
+  background: rgba(22, 16, 48, 0.45);
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  border-radius: 26px;
+  padding: 48px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 92, 246, 0.35);
+  box-shadow: 0 25px 50px rgba(139, 92, 246, 0.12);
+}
+
+.package-card.popular {
+  border: 2px solid #8b5cf6;
+  background: radial-gradient(circle at 50% 0%, rgba(139, 92, 246, 0.12) 0%, rgba(22, 16, 48, 0.55) 100%);
+  box-shadow: 0 20px 45px rgba(139, 92, 246, 0.15);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+  color: #ffffff;
+  padding: 6px 16px;
+  border-radius: 99px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.25);
+}
+
+.package-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.package-header h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.package-header p {
+  color: #94a3b8;
+  font-size: 13.5px;
+}
+
+.package-price {
+  font-size: 44px;
+  font-weight: 900;
+  color: #3b82f6;
+  margin-top: 10px;
+}
+
+.package-price span {
+  font-size: 14px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 38px;
+}
+
+.package-features li {
+  font-size: 14.5px;
+  color: #cbd5e1;
+  padding: 11px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.package-features li::before {
+  content: "✦";
+  color: #8b5cf6;
+  font-weight: bold;
+}
+
+.package-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.package-btn-outline {
+  border: 1.5px solid rgba(139, 92, 246, 0.5);
+  color: #a78bfa;
+  background: transparent;
+}
+
+.package-btn-outline:hover {
+  background: rgba(139, 92, 246, 0.08);
+  border-color: #8b5cf6;
+}
+
+.package-btn-filled {
+  background: linear-gradient(135deg, #7c3aed 0%, #3b82f6 50%, #4f46e5 100%);
+  color: #ffffff;
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.3);
+}
+
+.package-btn-filled:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(124, 58, 237, 0.5);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 980px) {
+  .astro-hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .astro-hero-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-small-stats {
+    margin: 0 auto;
+  }
+
+  .astro-stats-banner {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto 30px;
+  }
+
+  .astro-stat-item {
+    border-right: none;
+  }
+
+  .astro-form-container,
+  .remedial-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .astro-form-info {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .planets-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .deliverables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+  }
+}
+
+@media (max-width: 640px) {
+  .astro-stats-banner {
+    grid-template-columns: 1fr;
+  }
+  
+  .astro-hero-showcase {
+    height: 380px;
+  }
+
+  .floating-card {
+    width: 85px;
+    height: 85px;
+    padding: 10px;
+  }
+
+  .floating-card svg {
+    max-height: 36px;
+  }
+
+  .floating-card.card-center {
+    width: 130px;
+    height: 130px;
+  }
+
+  .planets-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .astro-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .astro-form-full {
+    grid-column: span 1;
+  }
+
+  .astro-form-card {
+    padding: 20px;
+  }
+}
+
+/* service-cta styling copied from service-detail.css */
+.service-cta-container {
+  padding: 80px 24px;
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  width: 100%;
+}
+
+.service-cta-card {
+  max-width: 1160px;
+  margin: 0 auto;
+  min-height: 235px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 36px;
+  padding: 48px 64px;
+  border-radius: 22px;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 76% 22%, rgba(110, 82, 255, 0.46), transparent 26%),
+    radial-gradient(circle at 98% 88%, rgba(255, 129, 69, 0.22), transparent 24%),
+    linear-gradient(120deg, #071125, #101339 58%, #22134a);
+  box-shadow:
+    0 30px 80px rgba(17, 24, 39, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.cta-glow-decor {
+  position: absolute;
+  right: -80px;
+  bottom: -170px;
+  width: 280px;
+  height: 280px;
+  border: 1px solid rgba(139, 135, 255, 0.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 22px rgba(120, 115, 255, 0.025),
+    0 0 0 44px rgba(120, 115, 255, 0.02),
+    0 0 0 66px rgba(120, 115, 255, 0.015);
+}
+
+.cta-left,
+.cta-right {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-eyebrow {
+  color: #ff9a55;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-title {
+  max-width: 620px;
+  margin-top: 10px;
+  font-size: clamp(34px, 4.5vw, 52px);
+  line-height: 1.1;
+  color: #ffffff;
+}
+
+.cta-desc {
+  color: #c8cbd8;
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.btn-premium {
+  min-height: 56px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 26px;
+  border-radius: 12px;
+  color: inherit;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-premium:hover {
+  transform: translateY(-3px);
+}
+
+.btn-cta-premium {
+  background: linear-gradient(100deg, #4d55ff, #7b5cff 55%, #ff8145);
+  color: #fff;
+  box-shadow: 0 14px 35px rgba(86, 81, 255, 0.25);
+}
+
+.arrow-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* Responsive adjustment for CTA banner */
+@media (max-width: 991px) {
+  .service-cta-card {
+    grid-template-columns: 1fr;
+    padding: 40px 32px;
+    gap: 24px;
+  }
+}
+
+/* ==========================================================================
+   LIGHT THEME OVERRIDES FOR PACKAGES SECTION
+   ========================================================================== */
+.packages-section.light-theme {
+  background: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.packages-section.light-theme .astro-section-eyebrow {
+  color: #7c3aed;
+}
+
+.packages-section.light-theme .astro-section-title {
+  color: #0f172a;
+}
+
+.packages-section.light-theme .package-card {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.04);
+}
+
+.packages-section.light-theme .package-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.08);
+}
+
+.packages-section.light-theme .package-card.popular {
+  border: 2px solid #7c3aed;
+  background: linear-gradient(180deg, #f5f3ff 0%, #ffffff 100%);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.12);
+}
+
+.packages-section.light-theme .package-header h3 {
+  color: #0f172a;
+}
+
+.packages-section.light-theme .package-header p {
+  color: #475569;
+}
+
+.packages-section.light-theme .package-price {
+  color: #7c3aed;
+}
+
+.packages-section.light-theme .package-price span {
+  color: #64748b;
+}
+
+.packages-section.light-theme .package-features li {
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.packages-section.light-theme .package-features li::before {
+  color: #7c3aed;
+}
+
+.packages-section.light-theme .package-btn-outline {
+  border: 1.5px solid #7c3aed;
+  color: #7c3aed;
+}
+
+.packages-section.light-theme .package-btn-outline:hover {
+  background: rgba(124, 58, 237, 0.06);
+  border-color: #6d28d9;
+  color: #6d28d9;
+}
+
+/* ==========================================================================
+   ASTRO GOLD PROCESS CARD & BUTTON STYLES
+   ========================================================================== */
+.process-card.card-astro-gold {
+  border-color: rgba(217, 119, 6, 0.18);
+  background: #fffdf9;
+  box-shadow: 0 15px 35px rgba(217, 119, 6, 0.03);
+}
+
+.process-card.card-astro-gold:hover {
+  border-color: #d97706;
+  box-shadow: 0 25px 50px rgba(217, 119, 6, 0.14);
+}
+
+.process-card.card-astro-gold .process-card-icon-wrap {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  border-color: rgba(217, 119, 6, 0.3);
+  box-shadow: 0 6px 15px rgba(217, 119, 6, 0.15);
+  color: #ffffff;
+}
+
+.process-card.card-astro-gold .process-card-icon-wrap::after {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.process-card.card-astro-gold:hover .process-card-icon-wrap {
+  border-color: #d97706;
+  box-shadow: 0 8px 20px rgba(217, 119, 6, 0.35);
+}
+
+.process-card.card-astro-gold .process-step-label {
+  font-size: 13.5px;
+  font-weight: 800;
+  color: #d97706;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+  margin-top: 10px;
+  display: block;
+}
+
+.process-card.card-astro-gold .process-card-title {
+  color: #1e293b;
+  font-size: 19px;
+  font-weight: 750;
+  margin-bottom: 12px;
+}
+
+.process-card.card-astro-gold:hover .process-card-title {
+  color: #d97706;
+}
+
+.process-card.card-astro-gold .process-card-desc {
+  color: #b45309;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.process-card.card-astro-gold .process-card-bottom-icon {
+  background: rgba(217, 119, 6, 0.08);
+  color: #d97706;
+}
+
+.process-btn-gold {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fbbf24;
+  color: #020412;
+  font-weight: 800;
+  padding: 16px 36px;
+  border-radius: 99px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 24px rgba(251, 191, 36, 0.2);
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.process-btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(251, 191, 36, 0.4);
+  background: #f59e0b;
+}
+
+/* ==========================================================================
+   PROCESS GRID LAYOUT OVERRIDES FOR ASTROLOGY PAGE (3x2 Grid)
+   ========================================================================== */
+.process-section .process-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 30px;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 40px 10px 0;
+}
+
+.process-section .process-card {
+  flex: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 980px) {
+  .process-section .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .process-section .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================================================
+   MOBILE PAGE POLISH
+   ========================================================================== */
+@media (max-width: 768px) {
+  .astro-body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .astro-hero {
+    min-height: 170px;
+    aspect-ratio: auto;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .astro-form-section,
+  .planets-section,
+  .deliverables-section,
+  .packages-section {
+    padding: 58px 14px;
+  }
+
+  .astro-form-header-center {
+    margin-bottom: 28px;
+  }
+
+  .astro-badge {
+    max-width: 100%;
+    padding: 9px 14px;
+    font-size: 10.5px;
+    line-height: 1.2;
+    letter-spacing: 1.2px;
+  }
+
+  .astro-form-title {
+    max-width: 360px;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0;
+    margin-bottom: 0;
+  }
+
+  .astro-form-container,
+  .remedial-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 0;
+  }
+
+  .astro-info-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 30px 24px;
+    border-radius: 24px;
+    gap: 22px;
+  }
+
+  .info-card-eyebrow {
+    font-size: 10.5px;
+    letter-spacing: 1.4px;
+  }
+
+  .info-card-title {
+    font-size: 28px;
+    line-height: 1.28;
+    letter-spacing: 0;
+  }
+
+  .info-card-list {
+    gap: 15px;
+  }
+
+  .info-card-list li {
+    gap: 10px;
+  }
+
+  .list-text {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .list-text strong {
+    font-size: 14.5px;
+    line-height: 1.35;
+  }
+
+  .astro-wheel-wrapper {
+    max-width: 190px;
+    margin-top: 2px;
+  }
+
+  .astro-form-card {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 46px 24px 26px;
+    border-radius: 24px;
+    box-shadow: 0 18px 42px rgba(139, 92, 246, 0.08);
+  }
+
+  .astro-card-badge {
+    width: 56px;
+    height: 56px;
+  }
+
+  .badge-compass-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .astro-form-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .astro-form-full {
+    grid-column: span 1;
+  }
+
+  .astro-form-group label {
+    font-size: 10.5px;
+    letter-spacing: 1.2px;
+    margin-bottom: 7px;
+  }
+
+  .astro-form-input {
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 46px;
+    font-size: 14px;
+  }
+
+  .input-inline-icon {
+    left: 16px;
+    width: 17px;
+    height: 17px;
+  }
+
+  .astro-submit-btn {
+    height: auto;
+    min-height: 54px;
+    padding: 14px 12px;
+    font-size: 15px;
+    line-height: 1.25;
+    border-radius: 13px;
+    margin-top: 4px;
+  }
+
+  .astro-trust-container {
+    margin-top: 42px;
+    padding-top: 28px;
+  }
+
+  .astro-trust-badges {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .trust-badge-item {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+  }
+
+  .remedial-section {
+    padding: 56px 14px;
+    background:
+      radial-gradient(circle at 80% 18%, rgba(124, 58, 237, 0.24), transparent 30%),
+      linear-gradient(180deg, #080517 0%, #120b2a 100%);
+  }
+
+  .remedial-text {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 24px 20px;
+    border: 1px solid rgba(167, 139, 250, 0.14);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.025);
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.16);
+  }
+
+  .remedial-text .astro-section-eyebrow {
+    font-size: 10px;
+    letter-spacing: 1.6px;
+    margin-bottom: 12px;
+  }
+
+  .remedial-text h2 {
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+  }
+
+  .remedial-text p {
+    font-size: 14.5px;
+    line-height: 1.68;
+    margin-bottom: 16px;
+    color: #b8c7e6;
+  }
+
+  .remedial-points {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .remedial-points li {
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 0;
+    padding: 12px 12px;
+    border: 1px solid rgba(167, 139, 250, 0.14);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.035);
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .remedial-svg-wrap {
+    max-width: 300px;
+    margin: 12px auto 0;
+  }
+
+  .astro-section-header {
+    margin-bottom: 34px;
+  }
+
+  .astro-section-title {
+    font-size: 32px;
+    line-height: 1.18;
+    letter-spacing: 0;
+  }
+
+  .planets-grid,
+  .deliverables-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .planet-card,
+  .deliverable-card,
+  .package-card {
+    border-radius: 18px;
+    padding: 24px 20px;
+  }
+
+  .process-section {
+    padding: 64px 14px;
+  }
+
+  .process-desc-main {
+    font-size: 15px !important;
+    margin-bottom: 36px !important;
+  }
+
+  .process-section .process-grid {
+    gap: 20px;
+    padding: 20px 0 0;
+  }
+
+  .process-btn-gold {
+    width: 100%;
+    max-width: 330px;
+    min-height: 52px;
+    padding: 14px 18px;
+    font-size: 14px;
+    line-height: 1.25;
+    text-align: center;
+  }
+
+  .service-cta-container {
+    padding: 58px 14px;
+  }
+
+  .service-cta-card {
+    padding: 32px 22px;
+    border-radius: 18px;
+  }
+}
+
+@media (max-width: 420px) {
+  .astro-hero {
+    min-height: 145px;
+  }
+
+  .astro-form-section,
+  .planets-section,
+  .deliverables-section,
+  .packages-section {
+    padding: 50px 12px;
+  }
+
+  .astro-form-title {
+    max-width: 320px;
+    font-size: 31px;
+  }
+
+  .astro-info-card,
+  .astro-form-card {
+    max-width: 100%;
+    border-radius: 22px;
+  }
+
+  .astro-info-card {
+    padding: 26px 20px;
+  }
+
+  .astro-form-card {
+    padding: 44px 20px 24px;
+  }
+
+  .info-card-title {
+    font-size: 25px;
+  }
+
+  .astro-wheel-wrapper {
+    max-width: 172px;
+  }
+
+  .astro-form-input {
+    height: 48px;
+  }
+
+  .remedial-section {
+    padding: 48px 12px;
+  }
+
+  .remedial-text {
+    padding: 22px 16px;
+    border-radius: 20px;
+  }
+
+  .remedial-text h2 {
+    font-size: 28px;
+  }
+
+  .remedial-text p {
+    font-size: 14px;
+    line-height: 1.62;
+  }
+
+  .remedial-points li {
+    padding: 11px 10px;
+    font-size: 13px;
+  }
+}
+

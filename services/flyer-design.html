@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flyer Designing - Creative Corner Hub</title>
+  <meta name="description"
+    content="Creative Corner Hub service details for design, branding, print, merchandise, websites, and explainer video work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="service-detail.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-logo-area">
+      <a href="../index.html" class="logo" id="logo-link">
+        <img src="../logo.png" alt="Creative Corner Hub" class="logo-img" />
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="../index.html" class="nav-item" id="nav-home">Home</a>
+      <a href="../about.html" class="nav-item" id="nav-about">About</a>
+      <div class="nav-dropdown">
+        <a href="../index.html#services" class="nav-item nav-dropdown-toggle active" id="nav-services">Service</a>
+        <div class="nav-dropdown-menu" aria-label="Service pages">
+          <a href="website-design.html">Website Design</a>
+          <a href="packaging-design.html">Packaging Design</a>
+          <a href="brochure-design.html">Brochure Design</a>
+          <a href="flyer-design.html">Flyer Designing</a>
+          <a href="banner-design.html">Banner Designing</a>
+          <a href="id-card-design.html">ID Card Design</a>
+          <a href="menu-card-design.html">Menu Card Design</a>
+          <a href="name-plate-design.html">Name Plate Design</a>
+          <a href="tshirt-design.html">T Shirt Designing</a>
+          <a href="explainer-video.html">Explainer Video</a>
+        </div>
+      </div>
+      <a href="../astrology.html" class="nav-item" id="nav-astrology">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+          style="margin-right: 6px; color: #f59e0b; vertical-align: middle;">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+        </svg>
+        Astrology
+      </a>
+      <a href="../contact.html" class="nav-item" id="nav-contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../contact.html" class="inquiry-btn" id="inquiry-btn">Inquiry</a>
+    </div>
+  </header>
+
+  <main class="service-detail-main">
+    <!-- SECTION 1: HERO -->
+    <section class="service-hero">
+      <div>
+        <div class="service-eyebrow-pill" id="service-eyebrow">OUR SERVICES &bull;</div>
+        <h1 class="service-title serif-heading" id="service-hero-title"></h1>
+        <p class="service-intro" id="service-intro"></p>
+
+        <!-- Key point pills row -->
+        <div class="hero-key-points" id="hero-key-points"></div>
+
+        <div class="service-hero-actions">
+          <a href="../contact.html" class="btn-premium btn-premium-primary">
+            Start Your Project
+            <span class="arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+          <a href="../index.html#portfolio" class="btn-premium btn-premium-secondary">
+            View Our Work
+            <span class="arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="service-hero-media">
+        <img src="../website_design.jpg" alt="Creative service preview" id="service-image" />
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICE OVERVIEW -->
+    <section class="service-overview-section">
+      <div class="section-eyebrow">Service Overview</div>
+      <h2 class="section-title serif-heading">Service Overview</h2>
+
+      <div class="service-overview-grid">
+        <div class="overview-text">
+          <p id="service-description"></p>
+        </div>
+        <div class="overview-cards" id="overview-highlight-cards"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: WHAT'S INCLUDED -->
+    <section class="service-inclusions-section">
+      <div class="service-inclusions-container">
+        <div class="text-center">
+          <div class="section-eyebrow">What's Included</div>
+          <h2 class="section-title serif-heading" id="inclusions-title">What's Included in Services</h2>
+        </div>
+
+        <div class="service-inclusions-grid" id="service-inclusions-grid"></div>
+      </div>
+    </section>
+
+
+
+    <!-- SECTION 5: STATS / EXPERTISE -->
+    <section class="service-expertise-section">
+      <div class="service-expertise-grid">
+        <div class="expertise-left">
+          <h2 class="serif-heading">Your Vision, Our Expertise</h2>
+          <p>Great design is more than aesthetics &mdash; it's about creating connections, building trust, and driving
+            results. Let's bring your vision to life with a website that truly represents your brand.</p>
+          <a href="../contact.html" class="btn-premium btn-premium-primary">
+            Let's Work Together
+            <span class="arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="expertise-stats-grid">
+          <div class="stat-box">
+            <div class="stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="9"></rect>
+                <rect x="14" y="3" width="7" height="5"></rect>
+                <rect x="14" y="12" width="7" height="9"></rect>
+                <rect x="3" y="16" width="7" height="5"></rect>
+              </svg>
+            </div>
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Websites Delivered</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+                <line x1="9" y1="9" x2="9.01" y2="9"></line>
+                <line x1="15" y1="9" x2="15.01" y2="9"></line>
+              </svg>
+            </div>
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path>
+              </svg>
+            </div>
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Industries Served</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <div class="stat-number">&infin;</div>
+            <div class="stat-label">Commitment to Excellence</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: WAVE CTA BANNER -->
+    <section class="service-cta-container">
+      <div class="service-cta-card">
+        <div class="cta-glow-decor"></div>
+        <div class="cta-left">
+          <span class="cta-eyebrow">Ready to elevate your brand?</span>
+          <h2 class="cta-title serif-heading">Let's Build Something Exceptional Together</h2>
+        </div>
+        <div class="cta-right">
+          <p class="cta-desc">Have a project in mind? We'd love to hear about it. Let's create a digital experience that
+            sets you apart.</p>
+          <a href="../contact.html" class="btn-premium btn-cta-premium">
+            Start the Conversation
+            <span class="arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE MORE SERVICES -->
+    <section class="service-related">
+      <div class="service-related-head">
+        <h2 class="serif-heading">Explore More Services</h2>
+        <a href="../index.html#services">All Services</a>
+      </div>
+      <div class="service-related-grid" id="service-related-grid"></div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER SECTION ===== -->
+  <footer class="footer-section">
+    <div class="footer-glow footer-glow-left"></div>
+    <div class="footer-glow footer-glow-right"></div>
+
+    <div class="footer-container">
+      <div class="footer-middle">
+        <!-- Col 1: Brand Info -->
+        <div class="footer-links-col">
+          <div class="footer-brand-area" style="padding: 0;">
+            <a href="../index.html" class="footer-logo" id="footer-logo-link">
+              <img src="../logo.png" alt="Creative Corner Hub" class="footer-logo-img" />
+            </a>
+            <p class="footer-brand-desc" style="margin-top: 15px; margin-bottom: 20px;">
+              We are a team of visionary designers, developers, and writers dedicating our craftsmanship to building
+              premium digital experiences and brand legacies.
+            </p>
+            <!-- Social Icons -->
+            <div class="footer-socials" style="margin-top: 0; padding: 0;">
+              <a href="https://www.facebook.com/creativecornerhub/" class="footer-social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@CreativeCornerHub_CCH" class="footer-social-btn" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/creativecornerhub/?hl=en" class="footer-social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/104359627/" class="footer-social-btn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Our Services</h5>
+          <ul class="footer-links-list" id="footer-service-links"></ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">Quick Links</h5>
+          <ul class="footer-links-list">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../index.html#services">Services</a></li>
+            <li><a href="../astrology.html">Astrology</a></li>
+            <li><a href="../contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col footer-contact-col">
+          <h5 class="footer-col-title">Say Hello</h5>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="#6366f1" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg></div>
+            <div><small>Call Us Today</small><a href="tel:+919157413030">+91 91574 13030</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="#6366f1" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg></div>
+            <div><small>Email Address</small><a
+                href="mailto:hello@creativecornerhub.com">hello@creativecornerhub.com</a></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                stroke="#6366f1" stroke-width="2">
+                <path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg></div>
+            <div><small>Office Address</small><span><a href="https://www.google.com/search?sca_esv=c7737a8802ed2fd8&amp;sxsrf=APpeQnvGpZVocRrNsnQIlG3BGSFVzAEyqw:1787746973419&amp;kgmid=/g/11swr78k9t&amp;q=Creative+Corner+Hub&amp;shem=dlvs1,epsd1,ltae,rimspwouoe&amp;shndl=30&amp;source=sh/x/loc/uni/m1/1&amp;kgs=ccd14407d08c1d58&amp;utm_source=dlvs1,epsd1,ltae,rimspwouoe,sh/x/loc/uni/m1/1" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none; border-bottom: 1px dashed rgba(255,255,255,0.3);">543, Yash Arian, Near Swami Vivekanand Circle, Memnagar, Ahmedabad, Gujarat - 380052</a></span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; <span id="current-year"></span> Creative Corner Hub. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#" class="footer-back-to-top" id="backToTopBtn" aria-label="Back to Top">
+            Back to Top
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="12" y1="19" x2="12" y2="5"></line>
+              <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const services = { "website-design": { "title": "Website Design", "eyebrow": "Digital Experience", "image": "../website_design.jpg", "bannerImage": "../website_design.jpg", "intro": "We design modern, responsive websites that look premium, load fast, and help your business convert more visitors into inquiries.", "description": "Our website design service covers the complete visual and user experience of your website. We plan the page structure, create a professional visual direction, design responsive layouts, and make every section easy to scan. Whether you need a business website, service website, portfolio, or landing page, we make sure the final experience feels clean, credible, and conversion-focused.", "heroKeyPoints": ["Responsive on every device", "Clear lead-generation flow", "Fast and SEO-friendly structure"], "overviewHighlights": [{ "icon": "user-target", "title": "User-Centered Approach", "text": "We design around your audience, making navigation simple and every important action easy to find." }, { "icon": "chart-results", "title": "Results-Driven Design", "text": "Every section is planned to build trust, explain your offer, and move visitors toward inquiry." }], "inclusions": [{ "icon": "search", "title": "Discovery & Strategy", "text": "We understand your business, audience, competitors, and project goals before starting the design." }, { "icon": "design", "title": "UI/UX Design", "text": "We create polished screen layouts with strong hierarchy, clean spacing, and smooth user flow." }, { "icon": "responsive", "title": "Responsive Layouts", "text": "Your website is planned to look professional on desktop, tablet, and mobile screens." }, { "icon": "brand", "title": "Brand Integration", "text": "Colors, fonts, images, and visual details are matched with your brand identity." }, { "icon": "speed", "title": "Speed & SEO Basics", "text": "We keep layouts lightweight, readable, and search-friendly from the design stage." }, { "icon": "support", "title": "Launch Support", "text": "We help with final polish, page checks, and guidance for a confident website launch." }] }, "packaging-design": { "title": "Packaging Design", "eyebrow": "Product Branding", "image": "../packaging_design.jpg", "bannerImage": "../packaging_design.jpg", "intro": "Premium packaging design that makes your product look trustworthy, shelf-ready, and memorable.", "description": "Packaging is often the first physical touchpoint between your brand and your customer. We create packaging that communicates product value clearly while making the design attractive for retail shelves, online listings, and gifting experiences. From labels to boxes and pouches, every detail is balanced for beauty, readability, and production practicality.", "heroKeyPoints": ["Shelf-ready visual impact", "Print-friendly artwork", "Brand-focused product story"], "overviewHighlights": [{ "icon": "packaging", "title": "Retail-Ready Design", "text": "We plan front, back, and side panels so your product looks professional in real buying situations." }, { "icon": "brand", "title": "Strong Brand Recall", "text": "Your logo, colors, product name, and claims are arranged to make the brand easy to remember." }], "inclusions": [{ "icon": "search", "title": "Product Research", "text": "We review your category, target buyers, and competitors before deciding the design direction." }, { "icon": "layout", "title": "Panel Layout", "text": "We organize product name, benefits, ingredients, instructions, barcode, and required details cleanly." }, { "icon": "design", "title": "Creative Concepts", "text": "You get attractive visual concepts matched to your product positioning and brand personality." }, { "icon": "vector", "title": "Print Artwork", "text": "Final files are prepared with production-friendly size, margins, and export formats." }, { "icon": "packaging", "title": "Mockup Preview", "text": "We show how the design can look on the product pack before final delivery." }, { "icon": "support", "title": "Revision Support", "text": "We refine text, placement, and visual details so the final design feels complete." }] }, "brochure-design": { "title": "Brochure Design", "eyebrow": "Print Communication", "image": "../brochure_design.jpg", "bannerImage": "../brochure_design.jpg", "intro": "Professional brochures and company profiles that explain your business with clarity and confidence.", "description": "A brochure should not just look good; it should guide the reader through your brand, services, products, process, and contact details in a clean story. We design brochures for companies, institutions, product catalogs, real estate, events, and marketing campaigns with a premium layout that works in print and digital PDF formats.", "heroKeyPoints": ["Clean content hierarchy", "Print and PDF ready", "Premium business presentation"], "overviewHighlights": [{ "icon": "layout", "title": "Structured Storytelling", "text": "We arrange your information page by page so readers understand your value quickly." }, { "icon": "chart-results", "title": "Sales Support Material", "text": "The design helps your team present services, packages, and products more professionally." }], "inclusions": [{ "icon": "search", "title": "Content Planning", "text": "We help organize company information, service details, product sections, and calls to action." }, { "icon": "layout", "title": "Page Layout Design", "text": "Each page is designed with strong spacing, readable typography, and balanced visuals." }, { "icon": "brand", "title": "Brand Styling", "text": "Your colors, logo, image style, and tone are kept consistent across the brochure." }, { "icon": "vector", "title": "Infographics & Icons", "text": "We add icons, highlights, and visual blocks to make complex information easy to read." }, { "icon": "design", "title": "Print-Ready Output", "text": "Final brochures are exported in high-quality formats suitable for professional printing." }, { "icon": "support", "title": "Digital PDF Version", "text": "We also prepare a clean PDF version that you can share on WhatsApp, email, or website." }] }, "flyer-design": { "title": "Flyer Designing", "eyebrow": "Promotion Design", "image": "../flyer_design.jpg", "bannerImage": "../flyer_design.jpg", "intro": "Attractive flyer designs for offers, events, launches, and local promotions that need quick attention.", "description": "Flyers need to communicate fast. We create promotional designs that make your offer, event, product, or service easy to understand at a glance. The layout is built around strong headlines, clean details, attractive visuals, and a clear call to action for print and digital sharing.", "heroKeyPoints": ["High-attention layout", "Clear offer messaging", "Print and social formats"], "overviewHighlights": [{ "icon": "user-target", "title": "Attention First", "text": "We use bold hierarchy so your main message gets noticed instantly." }, { "icon": "chart-results", "title": "Action Focused", "text": "Contact, date, offer, and CTA details are placed where people can act quickly." }], "inclusions": [{ "icon": "search", "title": "Message Planning", "text": "We identify the key offer, audience, deadline, and contact details before designing." }, { "icon": "design", "title": "Creative Layout", "text": "The flyer gets a sharp, attractive layout that fits your campaign style." }, { "icon": "layout", "title": "Readable Sections", "text": "We organize headings, points, prices, and details so nothing feels crowded." }, { "icon": "brand", "title": "Brand Match", "text": "Your logo, colors, and tone are used to make the flyer look connected to your business." }, { "icon": "responsive", "title": "Digital Versions", "text": "We prepare versions suitable for WhatsApp, Instagram, and other online sharing." }, { "icon": "vector", "title": "Print-Ready File", "text": "You receive high-quality artwork ready for professional print output." }] }, "banner-design": { "title": "Banner Designing", "eyebrow": "Outdoor & Digital", "image": "../banner_design.jpg", "bannerImage": "../banner_design.jpg", "intro": "Bold banner designs for shops, events, hoardings, websites, and social campaigns.", "description": "Banner design needs strong visibility and quick readability. We design print and digital banners with clear messaging, large readable text, strong brand presence, and visuals that work from a distance. Whether it is for a storefront, event, product launch, or online promotion, we make the layout clean and impactful.", "heroKeyPoints": ["Readable from distance", "Any custom size", "Digital and print ready"], "overviewHighlights": [{ "icon": "layout", "title": "Size-Specific Layout", "text": "Every banner is designed according to its actual viewing size and placement." }, { "icon": "chart-results", "title": "Clear Promotion", "text": "We highlight your offer, product, event, or service without unnecessary clutter." }], "inclusions": [{ "icon": "search", "title": "Placement Planning", "text": "We understand where the banner will be used so the design fits the viewing distance." }, { "icon": "design", "title": "Creative Banner Layout", "text": "We build a striking design with bold visuals and strong text hierarchy." }, { "icon": "brand", "title": "Brand Visibility", "text": "Logo, colors, and contact details are placed for strong recall and trust." }, { "icon": "layout", "title": "Custom Size Setup", "text": "Artwork is prepared in the exact required size for print, web, or social use." }, { "icon": "vector", "title": "High-Resolution Export", "text": "You receive clean files suitable for printing or uploading online." }, { "icon": "support", "title": "Final Proofing", "text": "We check spelling, alignment, contact details, and layout before final delivery." }] }, "id-card-design": { "title": "ID Card Design", "eyebrow": "Corporate Identity", "image": "../id_card_design.jpg", "bannerImage": "../id_card_design.jpg", "intro": "Professional ID card designs for companies, schools, events, hospitals, and organizations.", "description": "A good ID card should look official, be easy to read, and represent your organization cleanly. We design front and back ID cards with employee or student information, photo placement, QR/barcode space, department details, and brand styling. The final layout is practical for printing, lamination, and daily use.", "heroKeyPoints": ["Front and back design", "Photo and QR space", "Professional identity layout"], "overviewHighlights": [{ "icon": "brand", "title": "Official Brand Look", "text": "We keep the ID card aligned with your organization colors, logo, and identity." }, { "icon": "layout", "title": "Readable Information", "text": "Name, designation, ID number, and contact details are arranged clearly." }], "inclusions": [{ "icon": "search", "title": "Format Discussion", "text": "We confirm card size, orientation, details, and usage before starting." }, { "icon": "layout", "title": "Front Layout", "text": "The front side includes photo, name, designation, ID number, and branding." }, { "icon": "brand", "title": "Back Layout", "text": "The back side can include address, terms, emergency contact, QR, or barcode." }, { "icon": "design", "title": "Clean Visual Design", "text": "We design a neat, professional card that is easy to read and carry." }, { "icon": "vector", "title": "Print-Ready Files", "text": "Final artwork is delivered in high-quality format for printing." }, { "icon": "support", "title": "Data Placement Support", "text": "We guide how employee/student data can be added cleanly for multiple cards." }] }, "menu-card-design": { "title": "Menu Card Design", "eyebrow": "Food & Hospitality", "image": "../menu_card_design.jpg", "bannerImage": "../menu_card_design.jpg", "intro": "Beautiful menu card designs that make your dishes easy to browse and tempting to order.", "description": "A menu is one of the most important sales tools for restaurants, cafes, cloud kitchens, and food brands. We design menus with clear categories, readable prices, appetizing style, and strong brand personality. The result is a menu that looks premium and helps customers choose faster.", "heroKeyPoints": ["Easy-to-scan categories", "Premium food presentation", "Print and digital menu"], "overviewHighlights": [{ "icon": "layout", "title": "Organized Menu Flow", "text": "Food items, categories, prices, and highlights are arranged for quick decisions." }, { "icon": "design", "title": "Appetizing Visual Style", "text": "We use colors, typography, and spacing that match your food brand experience." }], "inclusions": [{ "icon": "search", "title": "Menu Content Review", "text": "We organize dishes, sections, add-ons, pricing, and special highlights." }, { "icon": "layout", "title": "Category Layout", "text": "Breakfast, snacks, mains, beverages, combos, and offers are placed clearly." }, { "icon": "design", "title": "Premium Styling", "text": "The design is matched with your restaurant, cafe, or cloud kitchen personality." }, { "icon": "brand", "title": "Brand Integration", "text": "Logo, colors, and food photography style are used consistently." }, { "icon": "responsive", "title": "Digital Menu Version", "text": "We prepare a version suitable for QR menus, WhatsApp, and online sharing." }, { "icon": "vector", "title": "Print-Ready Export", "text": "Final menu files are delivered in high-quality format for printing." }] }, "name-plate-design": { "title": "Name Plate Design", "eyebrow": "Signage Design", "image": "../name_plate_design.jpg", "bannerImage": "../name_plate_design.jpg", "intro": "Elegant name plate designs for offices, homes, clinics, shops, desks, and professional spaces.", "description": "Name plates create a strong first impression. We design clean and premium name plates that suit your material, size, location, and brand personality. Whether you need acrylic, metal, wooden, glass, or printed signage, we create layouts that are readable, balanced, and production-friendly.", "heroKeyPoints": ["Material-friendly layout", "Readable premium typography", "Home and office use"], "overviewHighlights": [{ "icon": "design", "title": "Elegant First Impression", "text": "We focus on clean typography, spacing, and layout so the name plate looks premium." }, { "icon": "vector", "title": "Production-Ready Design", "text": "Artwork is planned according to material, size, engraving, cutting, or print needs." }], "inclusions": [{ "icon": "search", "title": "Size & Material Planning", "text": "We confirm whether the plate is acrylic, metal, wood, glass, or printed." }, { "icon": "layout", "title": "Text Arrangement", "text": "Names, designations, logos, flat numbers, and address details are placed clearly." }, { "icon": "design", "title": "Premium Styling", "text": "We create elegant layouts with strong spacing, borders, and decorative balance." }, { "icon": "brand", "title": "Logo Placement", "text": "Business or personal logos are integrated without disturbing readability." }, { "icon": "vector", "title": "Cut/Print Files", "text": "Final artwork is delivered in a format suitable for production." }, { "icon": "support", "title": "Mockup Preview", "text": "We provide a preview so you can understand the final look before making it." }] }, "tshirt-design": { "title": "T Shirt Designing", "eyebrow": "Merchandise Design", "image": "../tshirt_design.jpg", "bannerImage": "../tshirt_design.jpg", "intro": "Creative t-shirt graphics for brands, teams, events, uniforms, and merchandise collections.", "description": "T-shirt design needs artwork that looks good on fabric, supports your message, and feels wearable. We create typography, graphics, illustration-style artwork, event tees, brand merch, team shirts, and uniform graphics with print-friendly file preparation and mockup previews.", "heroKeyPoints": ["Wearable creative artwork", "Print-ready graphic files", "Brand merch and event tees"], "overviewHighlights": [{ "icon": "design", "title": "Custom Artwork", "text": "We create designs that match your theme, audience, and purpose." }, { "icon": "vector", "title": "Print-Friendly Files", "text": "Artwork is prepared for screen print, DTF, sublimation, or digital printing." }], "inclusions": [{ "icon": "search", "title": "Theme Discussion", "text": "We understand your concept, audience, shirt color, and printing method." }, { "icon": "design", "title": "Graphic Design", "text": "We create typography, badges, icons, or illustration-style graphics for your tee." }, { "icon": "layout", "title": "Placement Planning", "text": "Front, back, sleeve, or pocket placements are planned properly." }, { "icon": "brand", "title": "Brand or Team Identity", "text": "Logos, slogans, and campaign messages are integrated naturally." }, { "icon": "vector", "title": "Print-Ready Artwork", "text": "Final artwork is delivered in high-quality format for production." }, { "icon": "support", "title": "Mockup Preview", "text": "You get previews to see how the design looks on an actual t-shirt." }] }, "explainer-video": { "title": "Explainer Video", "eyebrow": "Motion Graphics", "image": "../explainer_video.jpg", "bannerImage": "../explainer_video.jpg", "intro": "Engaging explainer videos that make your product, service, or idea simple to understand.", "description": "Explainer videos help your audience understand your offer quickly through story, visuals, voice, and motion. We plan the concept, script flow, storyboard direction, visual style, and animation structure so your message feels clear, professional, and memorable for websites, ads, presentations, and social media.", "heroKeyPoints": ["Clear script flow", "Storyboard and visual direction", "Social and website ready"], "overviewHighlights": [{ "icon": "user-target", "title": "Simple Communication", "text": "We break complex ideas into a short, easy-to-follow visual story." }, { "icon": "chart-results", "title": "Conversion Support", "text": "Videos are structured to explain benefits, build trust, and encourage inquiry." }], "inclusions": [{ "icon": "search", "title": "Concept Planning", "text": "We understand your product, customer problem, and key message before scripting." }, { "icon": "layout", "title": "Script Structure", "text": "We arrange the video flow with intro, problem, solution, benefits, and call to action." }, { "icon": "design", "title": "Storyboard Direction", "text": "Scenes are planned visually so the animation or edit feels smooth." }, { "icon": "brand", "title": "Brand Visual Style", "text": "Colors, icons, characters, and graphics are matched with your brand identity." }, { "icon": "speed", "title": "Motion & Timing", "text": "We guide pacing, transitions, and timing so the video stays engaging." }, { "icon": "support", "title": "Export Support", "text": "Final video can be prepared for website, presentation, YouTube, and social media use." }] } };
+    const serviceSlug = 'flyer-design';
+    const service = services[serviceSlug] || services['website-design'];
+
+    document.title = service.title + ' - Creative Corner Hub';
+    document.getElementById('service-eyebrow').textContent = "OUR SERVICES •";
+    document.getElementById('service-hero-title').textContent = service.title;
+    document.getElementById('service-intro').textContent = service.intro;
+    document.getElementById('service-description').textContent = service.description;
+
+    const serviceImage = document.getElementById('service-image');
+    serviceImage.src = service.image;
+    serviceImage.alt = service.title;
+
+    // Svg Icon Provider
+    function getSvgIcon(iconName, strokeColor) {
+      strokeColor = strokeColor || "currentColor";
+      const icons = {
+        "user-target": `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>`,
+        "chart-results": `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>`,
+        "search": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>`,
+        "design": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19C5.35857 19.5 5.5 20 5.5 20.5C5.5 21.3284 6.17157 22 7 22H12Z"></path><circle cx="7.5" cy="10.5" r="1.5"></circle><circle cx="11.5" cy="7.5" r="1.5"></circle><circle cx="16.5" cy="9.5" r="1.5"></circle><circle cx="15.5" cy="14.5" r="1.5"></circle></svg>`,
+        "responsive": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>`,
+        "brand": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>`,
+        "speed": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>`,
+        "support": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-7.6-4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>`,
+        "vector": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="9" cy="9" r="2"></circle><path d="M21 15l-3.086-3.086a2 2 0 0 0-2.828 0L6 21"></path></svg>`,
+        "layout": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="9" y1="9" x2="21" y2="9"></line></svg>`,
+        "packaging": `<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>`,
+        "arrow-right": `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>`,
+        "check": `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>`,
+        "globe": `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>`,
+        "award": `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${strokeColor}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>`
+      };
+      return icons[iconName] || icons["design"];
+    }
+
+    // Render Hero Key Points
+    var keyPointsEl = document.getElementById("hero-key-points");
+    if (keyPointsEl && service.heroKeyPoints) {
+      var colors = [
+        { stroke: "#8b5cf6", bg: "rgba(139, 92, 246, 0.08)" },
+        { stroke: "#3b82f6", bg: "rgba(59, 130, 246, 0.08)" },
+        { stroke: "#f97316", bg: "rgba(249, 115, 22, 0.08)" }
+      ];
+      keyPointsEl.innerHTML = service.heroKeyPoints.map(function (point, index) {
+        var color = colors[index % colors.length];
+        return '<div class="key-point-pill">' +
+          '<div class="key-point-icon" style="background: ' + color.bg + '; color: ' + color.stroke + ';">' +
+          getSvgIcon("check", color.stroke) +
+          '</div>' +
+          '<span>' + point + '</span>' +
+          '</div>';
+      }).join("");
+    }
+
+    // Render Overview Highlight Cards
+    var highlightsEl = document.getElementById("overview-highlight-cards");
+    if (highlightsEl && service.overviewHighlights) {
+      var colors = [
+        { stroke: "#3b82f6", bg: "rgba(59, 130, 246, 0.08)" },
+        { stroke: "#f97316", bg: "rgba(249, 115, 22, 0.08)" }
+      ];
+      highlightsEl.innerHTML = service.overviewHighlights.map(function (hl, index) {
+        var color = colors[index % colors.length];
+        return '<div class="overview-highlight-card">' +
+          '<div class="card-icon-wrap" style="background: ' + color.bg + '; color: ' + color.stroke + ';">' +
+          getSvgIcon(hl.icon, color.stroke) +
+          '</div>' +
+          '<div class="card-details">' +
+          '<h3>' + hl.title + '</h3>' +
+          '<p>' + hl.text + '</p>' +
+          '</div>' +
+          '</div>';
+      }).join("");
+    }
+
+    // Render Inclusions
+    document.getElementById("inclusions-title").textContent = "What's Included in " + service.title + " Services";
+    var inclusionsEl = document.getElementById("service-inclusions-grid");
+    if (inclusionsEl && service.inclusions) {
+      var colors = [
+        { stroke: "#8b5cf6", bg: "rgba(139, 92, 246, 0.08)" },
+        { stroke: "#3b82f6", bg: "rgba(59, 130, 246, 0.08)" },
+        { stroke: "#f97316", bg: "rgba(249, 115, 22, 0.08)" },
+        { stroke: "#10b981", bg: "rgba(16, 185, 129, 0.08)" },
+        { stroke: "#ef4444", bg: "rgba(239, 68, 68, 0.08)" },
+        { stroke: "#6366f1", bg: "rgba(99, 102, 241, 0.08)" }
+      ];
+      inclusionsEl.innerHTML = service.inclusions.map(function (inc, index) {
+        var color = colors[index % colors.length];
+        return '<div class="inclusion-card">' +
+          '<div class="inclusion-card-icon" style="background: ' + color.bg + '; color: ' + color.stroke + ';">' +
+          getSvgIcon(inc.icon, color.stroke) +
+          '</div>' +
+          '<div class="inclusion-card-content">' +
+          '<h3 class="inclusion-card-title">' + inc.title + '</h3>' +
+          '<p class="inclusion-card-text">' + inc.text + '</p>' +
+          '</div>' +
+          '</div>';
+      }).join("");
+    }
+
+    // Update first stat dynamically based on service slug
+    var statsMap = {
+      "website-design": { num: "150+", label: "Websites Delivered" },
+      "packaging-design": { num: "200+", label: "Products Packaged" },
+      "brochure-design": { num: "320+", label: "Brochures Designed" },
+      "flyer-design": { num: "1000+", label: "Flyers Designed" },
+      "banner-design": { num: "450+", label: "Banners Printed" },
+      "id-card-design": { num: "5000+", label: "ID Cards Printed" },
+      "menu-card-design": { num: "180+", label: "Menus Formatted" },
+      "name-plate-design": { num: "250+", label: "Name Plates Crafted" },
+      "tshirt-design": { num: "1200+", label: "Shirts Printed" },
+      "explainer-video": { num: "80+", label: "Videos Produced" }
+    };
+    var serviceStat = statsMap[serviceSlug] || { num: "250+", label: "Projects Completed" };
+    var statBoxes = document.querySelectorAll(".expertise-stats-grid .stat-box");
+    if (statBoxes && statBoxes.length > 0) {
+      statBoxes[0].querySelector(".stat-number").textContent = serviceStat.num;
+      statBoxes[0].querySelector(".stat-label").textContent = serviceStat.label;
+    }
+
+    // Render Related Grid
+    var relatedGrid = document.getElementById("service-related-grid");
+    var footerLinks = document.getElementById("footer-service-links");
+    var serviceEntries = Object.entries(services);
+
+    if (relatedGrid) {
+      relatedGrid.innerHTML = serviceEntries
+        .filter(function (entry) { return entry[0] !== serviceSlug; })
+        .slice(0, 5)
+        .map(function (entry) {
+          var slug = entry[0];
+          var item = entry[1];
+          return '<a class="service-mini-card" href="' + slug + '.html">' +
+            '<img src="' + item.image + '" alt="' + item.title + '">' +
+            '<span>' + item.title + '</span>' +
+            '</a>';
+        }).join("");
+    }
+
+    if (footerLinks) {
+      footerLinks.innerHTML = serviceEntries
+        .map(function (entry) {
+          var slug = entry[0];
+          var item = entry[1];
+          return '<li><a href="' + slug + '.html">' + item.title + '</a></li>';
+        }).join("");
+    }
+
+    // Set Year
+    var yearEl = document.getElementById("current-year");
+    if (yearEl) {
+      yearEl.textContent = new Date().getFullYear();
+    }
+  </script>
+
+  <!-- Inquiry Popup Modal -->
+  <div class="modal-overlay" id="inquiry-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Modal">&times;</button>
+
+      <!-- Form state -->
+      <div id="modal-form-state">
+        <div class="modal-header">
+          <h3>Inquire Now</h3>
+          <p>Tell us about your project requirements and we will get back to you within 24 hours.</p>
+        </div>
+
+        <form id="modal-inquiry-form" onsubmit="event.preventDefault(); handleModalSubmit();">
+          <div class="modal-form-group">
+            <label for="modal-name">Full Name</label>
+            <input type="text" id="modal-name" class="modal-form-input" placeholder="Your Name" required />
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modal-email">Email Address</label>
+            <input type="email" id="modal-email" class="modal-form-input" placeholder="name@company.com" required />
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modal-phone">Phone Number</label>
+            <input type="tel" id="modal-phone" class="modal-form-input" placeholder="+91 XXXXX XXXXX" required />
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modal-service">Select Service</label>
+            <select id="modal-service" class="modal-form-input" style="padding-right: 28px; appearance: auto;" required>
+              <option value="" disabled selected>Choose a Service</option>
+              <option value="website-design">Website Design</option>
+              <option value="packaging-design">Packaging Design</option>
+              <option value="brochure-design">Brochure Design</option>
+              <option value="flyer-design">Flyer Designing</option>
+              <option value="banner-design">Banner Designing</option>
+              <option value="id-card-design">ID Card Design</option>
+              <option value="menu-card-design">Menu Card Design</option>
+              <option value="name-plate-design">Name Plate Design</option>
+              <option value="tshirt-design">T Shirt Designing</option>
+              <option value="explainer-video">Explainer Video</option>
+            </select>
+          </div>
+
+          <div class="modal-form-group">
+            <label for="modal-message">Project Description</label>
+            <textarea id="modal-message" class="modal-form-input" placeholder="Briefly describe your project..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="modal-submit-btn">Send Inquiry</button>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div id="modal-success-state" class="modal-success-state">
+        <div class="success-icon-wrap">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4>Inquiry Submitted!</h4>
+        <p>Thank you for reaching out. Our team will review your project details and contact you shortly.</p>
+        <button class="modal-submit-btn" onclick="closeInquiryModal()"
+          style="background: #111325; box-shadow: none;">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal logic
+    function openInquiryModal(serviceValue) {
+      const modal = document.getElementById('inquiry-modal');
+      const formState = document.getElementById('modal-form-state');
+      const successState = document.getElementById('modal-success-state');
+
+      if (modal) {
+        modal.classList.add('active');
+        formState.style.display = 'block';
+        successState.style.display = 'none';
+        document.getElementById('modal-inquiry-form').reset();
+
+        if (serviceValue) {
+          const select = document.getElementById('modal-service');
+          if (select) {
+            select.value = serviceValue;
+          }
+        }
+      }
+    }
+
+    function closeInquiryModal() {
+      const modal = document.getElementById('inquiry-modal');
+      if (modal) {
+        modal.classList.remove('active');
+      }
+    }
+
+    function handleModalSubmit() {
+      document.getElementById('modal-form-state').style.display = 'none';
+      document.getElementById('modal-success-state').style.display = 'flex';
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.inquiry-btn, .btn-premium-primary, .btn-cta-premium, .btn-premium').forEach(btn => {
+        const href = btn.getAttribute('href');
+        const hasInquiryClass = btn.classList.contains('inquiry-btn');
+        if (hasInquiryClass || (href && (href.includes('contact.html') || href === '#contact' || href === '#inquiry'))) {
+          btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            let currentService = '';
+            if (typeof serviceSlug !== 'undefined') {
+              currentService = serviceSlug;
+            }
+            openInquiryModal(currentService);
+          });
+        }
+      });
+
+      const closeBtn = document.getElementById('modal-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', closeInquiryModal);
+      }
+
+      const modalOverlay = document.getElementById('inquiry-modal');
+      if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+          if (e.target === modalOverlay) {
+            closeInquiryModal();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeInquiryModal();
+        }
+      });
+    });
+  </script>
+  <script src="../inquiry-popup.js"></script>
+</body>
+
+</html>
