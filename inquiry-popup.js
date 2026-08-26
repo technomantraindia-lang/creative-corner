@@ -207,8 +207,18 @@
     });
 
     navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        if (!link.classList.contains('nav-dropdown-toggle')) closeMenu();
+      link.addEventListener('click', function (event) {
+        var isMobile = window.matchMedia('(max-width: 820px)').matches;
+        if (isMobile && link.classList.contains('nav-dropdown-toggle')) {
+          var dropdown = link.closest('.nav-dropdown');
+          if (dropdown) {
+            event.preventDefault();
+            dropdown.classList.toggle('dropdown-open');
+            link.setAttribute('aria-expanded', dropdown.classList.contains('dropdown-open') ? 'true' : 'false');
+          }
+          return;
+        }
+        closeMenu();
       });
     });
 
