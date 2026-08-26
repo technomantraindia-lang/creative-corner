@@ -6716,20 +6716,28 @@ textarea.modal-form-input {
   }
 
   .stats-container {
-    grid-template-columns: 1fr;
-    padding: 24px 14px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 20px 14px;
+    gap: 10px;
+    border-radius: 20px;
   }
 
   .stat-item {
-    padding: 16px 6px;
+    min-height: 118px;
+    padding: 18px 8px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.56);
   }
 
   .stat-num-wrapper {
-    font-size: 48px;
+    font-size: 38px;
+    margin-bottom: 8px;
   }
 
   .stat-label {
-    font-size: 13px;
+    font-size: 11px;
+    line-height: 1.25;
+    letter-spacing: 0.8px;
   }
 
   .services {
