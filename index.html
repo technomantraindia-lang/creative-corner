@@ -1945,45 +1945,16 @@
     // Init
     setActive(1);
 
-    // Portfolio Category Filtering logic
+    // Portfolio grid: show all logo work without category filtering.
     function initPortfolioFilter() {
       const buttons = document.querySelectorAll('.port-cat-btn');
       const cards = document.querySelectorAll('.port-grid-card');
 
-      function filterCategory(category) {
-        buttons.forEach(btn => {
-          if (btn.getAttribute('data-category') === category) {
-            btn.classList.add('active');
-          } else {
-            btn.classList.remove('active');
-          }
-        });
-
-        cards.forEach(card => {
-          const cardCat = card.getAttribute('data-category');
-          if (cardCat === category) {
-            card.classList.remove('hide');
-            // Trigger repaint to restart animation
-            card.style.animation = 'none';
-            card.offsetHeight; /* trigger reflow */
-            card.style.animation = null;
-            card.classList.add('show-anim');
-          } else {
-            card.classList.add('hide');
-            card.classList.remove('show-anim');
-          }
-        });
-      }
-
-      buttons.forEach(btn => {
-        btn.addEventListener('click', () => {
-          const cat = btn.getAttribute('data-category');
-          filterCategory(cat);
-        });
+      buttons.forEach(btn => btn.classList.remove('active'));
+      cards.forEach(card => {
+        card.classList.remove('hide');
+        card.classList.add('show-anim');
       });
-
-      // Initialize with Jewellery & Fashion
-      filterCategory('jewellery');
     }
 
     initPortfolioFilter();

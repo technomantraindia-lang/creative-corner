@@ -2744,7 +2744,7 @@ body.nav-lock {
 }
 
 .portfolio-categories {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   gap: 12px;
@@ -2783,10 +2783,10 @@ body.nav-lock {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 42px auto 0;
   position: relative;
   z-index: 2;
 }
@@ -2890,19 +2890,10 @@ body.nav-lock {
     font-size: 36px;
   }
 
-  .portfolio-categories {
-    gap: 8px;
-    margin-bottom: 35px;
-  }
-
-  .port-cat-btn {
-    padding: 8px 18px;
-    font-size: 13.5px;
-  }
-
   .portfolio-grid {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
     gap: 20px;
+    margin-top: 28px;
   }
 
   .port-grid-card {
