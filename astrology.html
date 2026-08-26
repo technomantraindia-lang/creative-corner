@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Astrology Logo Design – Creative Corner Hub</title>
+  <title>Vedic Astrology Logo Design & Remedial Logo Science – Creative Corner Hub</title>
   <meta name="description"
-    content="Creative Corner Hub crafts mystical astrology logo designs that capture cosmic energy, trust and timeless brand identity." />
+    content="We are India's leading brand design company crafting fortunate astrology logos, horoscope branding, and remedial logos based on Vedic astrology and planetary alignments." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="astrology.css" />
 </head>
 
-<body>
+<body class="astro-body">
 
   <!-- NAVBAR -->
   <header class="navbar">
@@ -43,53 +44,529 @@
           <a href="services/explainer-video.html">Explainer Video</a>
         </div>
       </div>
-      <a href="astrology.html" class="nav-item active" id="nav-astrology">Astrology</a>
+      <a href="astrology.html" class="nav-item active" id="nav-astrology">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px; color: #f59e0b; vertical-align: middle;">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        Astrology
+      </a>
       <a href="contact.html" class="nav-item" id="nav-contact">Contact</a>
     </nav>
 
     <div class="nav-actions">
-      <a href="#" class="inquiry-btn" id="inquiry-btn">Inquiry</a>
+      <a href="contact.html" class="inquiry-btn" id="inquiry-btn">Inquiry</a>
     </div>
   </header>
 
-  <!-- HERO -->
+  <!-- HERO SECTION -->
   <section class="astro-hero">
-    <div class="astro-hero-inner">
-      <span class="astro-badge">✦ Astrology Logo Design ✦</span>
-      <h1>Cosmic Brands,<br /><span class="astro-accent">Timeless Identity</span></h1>
-      <p>We design mystical astrology logos that blend zodiac symbolism, celestial artistry and modern branding to make your spiritual business shine.</p>
-      <a href="#" class="inquiry-btn astro-cta" id="astro-inquiry-btn">Get Your Astrology Logo</a>
+    <div class="astro-stars"></div>
+    <div class="astro-hero-container">
+      <!-- Left Column: Content -->
+      <div class="astro-hero-content">
+        <h1 class="astro-serif">We Create Logos <br>That Leave a Lasting <br><span class="astro-gold-accent">Impression.</span></h1>
+        <p>Unique. Memorable. Timeless. We design logos that represent your brand identity and help you stand out from the competition.</p>
+        
+        <div class="hero-actions">
+          <a href="#consultation-form" class="hero-btn hero-btn-primary">
+            Start Your Logo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="index.html#portfolio" class="hero-btn hero-btn-secondary">
+            View Portfolio
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-left: 4px; vertical-align: middle;">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-small-stats">
+          <div class="small-stat-item">
+            <div class="small-stat-icon-wrap">✧</div>
+            <div class="small-stat-info">
+              <strong>1000+</strong>
+              <span>Logos Designed</span>
+            </div>
+          </div>
+          <div class="small-stat-item">
+            <div class="small-stat-icon-wrap">✧</div>
+            <div class="small-stat-info">
+              <strong>500+</strong>
+              <span>Happy Clients</span>
+            </div>
+          </div>
+          <div class="small-stat-item">
+            <div class="small-stat-icon-wrap">✧</div>
+            <div class="small-stat-info">
+              <strong>5+</strong>
+              <span>Years Experience</span>
+            </div>
+          </div>
+          <div class="small-stat-item">
+            <div class="small-stat-icon-wrap">✧</div>
+            <div class="small-stat-info">
+              <strong>Unlimited</strong>
+              <span>Revisions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Floating Logo Showcase -->
+      <div class="astro-hero-showcase">
+        <!-- Background Ornaments -->
+        <div class="showcase-grid-dots"></div>
+        <div class="showcase-orbit-ring-1"></div>
+        <div class="showcase-orbit-ring-2"></div>
+        <div class="orbit-planet-dot dot-1"></div>
+        <div class="orbit-planet-dot dot-2"></div>
+
+        <!-- Center Astroger logo -->
+        <div class="floating-card card-center">
+          <svg viewBox="0 0 100 100" width="70" height="70">
+            <!-- The Letter A -->
+            <path d="M25 80 L48 20 L58 20 L80 80 H68 L62 60 H38 L32 80 H25 Z M50 28 L42 50 H58 Z" fill="url(#astroger-gold-grad)" />
+            <!-- Swoosh Orbit -->
+            <path d="M15 65 C 25 55, 60 40, 85 45" stroke="url(#astroger-gold-grad)" stroke-width="5" stroke-linecap="round" fill="none" />
+            <!-- Star on top-right -->
+            <path d="M72 25 L75 32 L82 33 L77 38 L78 45 L72 41 L66 45 L67 38 L62 33 L69 32 Z" fill="#fbbf24" />
+            <defs>
+              <linearGradient id="astroger-gold-grad" x1="0" y1="100" x2="100" y2="0" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#fbbf24" />
+                <stop offset="0.5" stop-color="#f59e0b" />
+                <stop offset="1" stop-color="#d97706" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>Astroger</span>
+          <span style="font-size: 8px; color: #94a3b8; font-weight: 500; margin-top: 4px;">LOGO DESIGN</span>
+        </div>
+
+        <!-- 1. Qubix -->
+        <div class="floating-card card-qubix">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <polygon points="50,15 85,35 85,75 50,95 15,75 15,35" fill="none" stroke="#7c3aed" stroke-width="6" stroke-linejoin="round" />
+            <polyline points="15,35 50,55 85,35" fill="none" stroke="#7c3aed" stroke-width="5" stroke-linejoin="round" />
+            <line x1="50" y1="55" x2="50" y2="95" stroke="#7c3aed" stroke-width="5" />
+          </svg>
+          <span>Qubix</span>
+        </div>
+
+        <!-- 2. Nexora -->
+        <div class="floating-card card-nexora">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <path d="M25 75 V25 H38 L62 62 V25 H75 V75 H62 L38 38 V75 H25 Z" fill="#2563eb" />
+          </svg>
+          <span>Nexora</span>
+        </div>
+
+        <!-- 3. Greenova -->
+        <div class="floating-card card-greenova">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <circle cx="50" cy="50" r="30" fill="none" stroke="#16a34a" stroke-width="6" />
+            <circle cx="50" cy="50" r="18" fill="#16a34a" />
+            <circle cx="50" cy="50" r="10" fill="#f59e0b" />
+          </svg>
+          <span>Greenova</span>
+        </div>
+
+        <!-- 4. Bloomi -->
+        <div class="floating-card card-bloomi">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <circle cx="50" cy="50" r="30" fill="none" stroke="#db2777" stroke-width="6" />
+            <circle cx="50" cy="50" r="18" fill="none" stroke="#db2777" stroke-width="4" />
+            <circle cx="50" cy="50" r="8" fill="#db2777" />
+          </svg>
+          <span>Bloomi</span>
+        </div>
+
+        <!-- 5. FitLife -->
+        <div class="floating-card card-fitlife">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <path d="M30 30 H52 C64 30, 72 38, 72 50 C72 62, 64 70, 52 70 H30 V30 Z" fill="#0f172a" />
+            <path d="M42 42 H48 C52 42, 56 45, 56 50 C56 55, 52 58, 48 58 H42 V42 Z" fill="#dc2626" />
+            <rect x="18" y="42" width="12" height="16" rx="2" fill="#0f172a" />
+          </svg>
+          <span>FitLife</span>
+        </div>
+
+        <!-- 6. Royalove -->
+        <div class="floating-card card-royalove">
+          <svg viewBox="0 0 100 100" width="46" height="46">
+            <path d="M30 75 V25 H55 C65 25, 72 32, 72 42 C72 50, 66 56, 56 58 L72 75 H58 L44 58 H42 V75 H30 Z M42 46 H54 C58 46, 60 44, 60 42 C60 40, 58 37, 54 37 H42 V46 Z" fill="#d97706" />
+          </svg>
+          <span>Royalove</span>
+        </div>
+      </div>
+    </div>
+    <!-- STATS BANNER (Overlapping Bottom Edge) -->
+    <div class="astro-stats-banner">
+      <div class="astro-stat-item">
+        <div class="astro-stat-icon-wrap">🚀</div>
+        <div class="astro-stat-info">
+          <h4>1500+</h4>
+          <p>Projects Completed</p>
+        </div>
+      </div>
+      <div class="astro-stat-item">
+        <div class="astro-stat-icon-wrap">🌐</div>
+        <div class="astro-stat-info">
+          <h4>100+</h4>
+          <p>Countries Served</p>
+        </div>
+      </div>
+      <div class="astro-stat-item">
+        <div class="astro-stat-icon-wrap">🏆</div>
+        <div class="astro-stat-info">
+          <h4>99%</h4>
+          <p>Client Satisfaction</p>
+        </div>
+      </div>
+      <div class="astro-stat-item">
+        <div class="astro-stat-icon-wrap">🎧</div>
+        <div class="astro-stat-info">
+          <h4>24/7</h4>
+          <p>Support Available</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- FEATURES -->
-  <section class="astro-features">
-    <h2>What We Craft</h2>
-    <div class="astro-grid">
-      <div class="astro-card">
-        <div class="astro-icon">☉</div>
-        <h3>Zodiac Symbols</h3>
-        <p>All 12 signs beautifully stylised into memorable marks.</p>
+  <!-- CONSULTATION FORM SECTION -->
+  <section class="astro-form-section" id="consultation-form">
+    <div class="astro-form-container">
+      <div class="astro-form-info">
+        <span class="astro-section-eyebrow">Horoscope Logo Analysis</span>
+        <h2 class="astro-serif">Find Favorable & Fortunate Logo Details</h2>
+        <p>Your birth details determine your ruling planet, color energy, and element balance (Fire, Water, Earth, Air). Submit your horoscope details to receive customized logo recommendations designed for your corporate success.</p>
+        <!-- Intricate Astrological Birth Chart SVG -->
+        <svg class="astro-illustration" viewBox="0 0 200 200" width="300" height="300" fill="none">
+          <!-- Outer glowing rings -->
+          <circle cx="100" cy="100" r="90" stroke="#d97706" stroke-width="1.2" stroke-dasharray="4 3" />
+          <circle cx="100" cy="100" r="82" stroke="#d97706" stroke-width="0.8" />
+          <circle cx="100" cy="100" r="74" stroke="#d97706" stroke-width="0.5" />
+          
+          <!-- Zodiac sectors divider lines -->
+          <g stroke="#d97706" stroke-width="0.6" opacity="0.65">
+            <line x1="100" y1="18" x2="100" y2="182" />
+            <line x1="18" y1="100" x2="182" y2="100" />
+            <line x1="42.1" y1="42.1" x2="157.9" y2="157.9" />
+            <line x1="42.1" y1="157.9" x2="157.9" y2="42.1" />
+          </g>
+
+          <!-- Concentric inner rings -->
+          <circle cx="100" cy="100" r="54" stroke="#d97706" stroke-width="1.5" />
+          <circle cx="100" cy="100" r="50" stroke="#d97706" stroke-width="0.5" stroke-dasharray="2 2" />
+          
+          <!-- Occult symbols in houses -->
+          <text x="100" y="32" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♈</text>
+          <text x="148" y="52" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♊</text>
+          <text x="168" y="104" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♌</text>
+          <text x="148" y="156" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♎</text>
+          <text x="100" y="176" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♐</text>
+          <text x="52" y="156" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♒</text>
+          <text x="32" y="104" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♓</text>
+          <text x="52" y="52" font-size="11" fill="#d97706" font-family="Arial, sans-serif" font-weight="bold" text-anchor="middle">♉</text>
+
+          <!-- Center-piece glowing sun star -->
+          <circle cx="100" cy="100" r="22" fill="#fef3c7" stroke="#d97706" stroke-width="1.2" />
+          <!-- Center symbol -->
+          <path d="M100 89 L103 96 L111 97 L105 102 L107 110 L100 105 L93 110 L95 102 L89 97 L97 96 Z" fill="#d97706" />
+        </svg>
       </div>
-      <div class="astro-card">
-        <div class="astro-icon">☾</div>
-        <h3>Celestial Art</h3>
-        <p>Moons, stars & planets woven into elegant compositions.</p>
-      </div>
-      <div class="astro-card">
-        <div class="astro-icon">✧</div>
-        <h3>Mystic Palettes</h3>
-        <p>Cosmic gradients of indigo, gold and midnight hues.</p>
-      </div>
-      <div class="astro-card">
-        <div class="astro-icon">⟡</div>
-        <h3>Sacred Geometry</h3>
-        <p>Mandalas and yantras crafted with precision.</p>
+
+      <div class="astro-form-card">
+        <form id="astroConsultationForm" onsubmit="event.preventDefault(); handleAstroSubmit();">
+          <div class="astro-form-grid">
+            <div class="astro-form-group astro-form-full">
+              <label for="astro-name">Full Name</label>
+              <input type="text" id="astro-name" class="astro-form-input" placeholder="Your Name" required />
+            </div>
+            
+            <div class="astro-form-group">
+              <label for="astro-email">Email Address</label>
+              <input type="email" id="astro-email" class="astro-form-input" placeholder="email@example.com" required />
+            </div>
+            
+            <div class="astro-form-group">
+              <label for="astro-phone">Phone Number</label>
+              <input type="tel" id="astro-phone" class="astro-form-input" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+
+            <div class="astro-form-group">
+              <label for="astro-dob">Date of Birth</label>
+              <input type="date" id="astro-dob" class="astro-form-input" required />
+            </div>
+
+            <div class="astro-form-group">
+              <label for="astro-tob">Time of Birth</label>
+              <input type="time" id="astro-tob" class="astro-form-input" required />
+            </div>
+
+            <div class="astro-form-group astro-form-full">
+              <label for="astro-pob">Place of Birth</label>
+              <input type="text" id="astro-pob" class="astro-form-input" placeholder="City, State, Country" required />
+            </div>
+
+            <div class="astro-form-group astro-form-full">
+              <button type="submit" class="astro-submit-btn">Find Fortune & Analyze</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- LOGO REMEDIAL SECTION -->
+  <section class="remedial-section">
+    <div class="remedial-container">
+      <div class="remedial-text">
+        <span class="astro-section-eyebrow">Energetic Alignment</span>
+        <h2 class="astro-serif">What is Logo Remedial?</h2>
+        <p>In Vedic Science, shapes, patterns, and colors are forms of energy that directly influence the subconscious mind of your audience and the destiny of your brand. A logo with conflicting elements can block positive opportunities.</p>
+        <p><strong>Logo Remedial</strong> is the specialized technique of designing a brand identity that acts as a positive cosmic remedy, balancing your business's weak elements and amplifying your strong houses to invite wealth and stability.</p>
+        <ul class="remedial-points">
+          <li>Corrects negative elements in business signatures</li>
+          <li>Balances Earth, Water, Fire, Air, and Space energies</li>
+          <li>Applies planetary colors representing your auspicious houses</li>
+        </ul>
+      </div>
+      <div>
+        <svg viewBox="0 0 200 200" width="100%" height="auto" style="max-width: 440px; display: block; margin: 0 auto;">
+          <circle cx="100" cy="100" r="85" fill="none" stroke="#d97706" stroke-width="1" />
+          <polygon points="100,20 170,140 30,140" fill="none" stroke="#d97706" stroke-width="1.5" />
+          <polygon points="100,180 170,60 30,60" fill="none" stroke="#d97706" stroke-width="1" stroke-dasharray="3 3" />
+          <circle cx="100" cy="100" r="28" fill="#fef3c7" stroke="#d97706" stroke-width="1.5" />
+          <text x="100" y="105" font-family="Georgia" font-size="16" fill="#d97706" text-anchor="middle">ॐ</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANETS SECTION -->
+  <section class="planets-section">
+    <div class="astro-section-header">
+      <span class="astro-section-eyebrow">The Astrology Behind Designs</span>
+      <h2 class="astro-section-title astro-serif">Influence of Planets in Brand Identity</h2>
+    </div>
+
+    <div class="planets-grid">
+      <!-- 1. Sun -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">☉</div>
+          <div class="planet-title">
+            <h3>Sun (Surya)</h3>
+            <span>Authority & Power</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents leadership, executive authority, and recognition. Favorable for corporate CEOs, government brands, and founders.</p>
+      </div>
+
+      <!-- 2. Moon -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">☽</div>
+          <div class="planet-title">
+            <h3>Moon (Chandra)</h3>
+            <span>Creativity & Emotion</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents nurturing energy, emotions, and liquid assets. Ideal for wellness, hospitality, child care, and FMCG brands.</p>
+      </div>
+
+      <!-- 3. Mars -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">♂</div>
+          <div class="planet-title">
+            <h3>Mars (Mangal)</h3>
+            <span>Courage & Energy</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents action, technical skills, and dynamic focus. Favorable for sports, engineering, defense, and active service brands.</p>
+      </div>
+
+      <!-- 4. Mercury -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">☿</div>
+          <div class="planet-title">
+            <h3>Mercury (Budh)</h3>
+            <span>Business & Communication</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents intellect, calculation, trading, and media. Favorable for IT, marketing, commerce, writing, and consultative brands.</p>
+      </div>
+
+      <!-- 5. Jupiter -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">♃</div>
+          <div class="planet-title">
+            <h3>Jupiter (Guru)</h3>
+            <span>Wisdom & Expansion</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents knowledge, growth, wealth, and legal matters. Best for education, consulting, law firms, and finance.</p>
+      </div>
+
+      <!-- 6. Venus -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">♀</div>
+          <div class="planet-title">
+            <h3>Venus (Shukra)</h3>
+            <span>Luxury & Beauty</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents luxury, aesthetic design, arts, and creative arts. Ideal for fashion, cosmetics, real estate, and entertainment.</p>
+      </div>
+
+      <!-- 7. Saturn -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">♄</div>
+          <div class="planet-title">
+            <h3>Saturn (Shani)</h3>
+            <span>Structure & Discipline</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents physical labor, manufacturing, structure, and patience. Ideal for logistics, heavy machinery, and steel brands.</p>
+      </div>
+
+      <!-- 8. Rahu -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">☊</div>
+          <div class="planet-title">
+            <h3>Rahu</h3>
+            <span>Modern Innovation</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents out-of-the-box creativity, sudden expansion, and tech. Favorable for cutting-edge startups and digital media.</p>
+      </div>
+
+      <!-- 9. Ketu -->
+      <div class="planet-card">
+        <div class="planet-header">
+          <div class="planet-icon">☋</div>
+          <div class="planet-title">
+            <h3>Ketu</h3>
+            <span>Occult & Depth</span>
+          </div>
+        </div>
+        <p class="planet-desc">Represents spiritual depth, detailing, analysis, and research. Ideal for spiritual healers, yoga centers, and research labs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET SECTION -->
+  <section class="deliverables-section">
+    <div class="astro-section-header">
+      <span class="astro-section-eyebrow">Brand Deliverables</span>
+      <h2 class="astro-section-title astro-serif">What You Get in Vedic Logo Design</h2>
+    </div>
+
+    <div class="deliverables-grid">
+      <div class="deliverable-item">
+        <div class="deliverable-num">01</div>
+        <div class="deliverable-content">
+          <h4>Custom Shape & Grid Structure</h4>
+          <p>We analyze which geometry (circular, triangular, rectangular) matches your business element structure to prevent energy blockages.</p>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-num">02</div>
+        <div class="deliverable-content">
+          <h4>Planetary Color Palette</h4>
+          <p>A customized color scheme matching your ruling planet and rising house zodiac values to attract favorable clients.</p>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-num">03</div>
+        <div class="deliverable-content">
+          <h4>Auspicious Typography Analysis</h4>
+          <p>We correct font strokes and text alignments so that your business name spells out positive cosmic vibrations.</p>
+        </div>
+      </div>
+
+      <div class="deliverable-item">
+        <div class="deliverable-num">04</div>
+        <div class="deliverable-content">
+          <h4>Detailed Astro-Branding Report</h4>
+          <p>A comprehensive PDF explaining your charts, element balance, logo analysis, and ideal launch dates for new campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGO PACKAGES -->
+  <section class="packages-section">
+    <div class="astro-section-header">
+      <span class="astro-section-eyebrow">Choose Your Plan</span>
+      <h2 class="astro-section-title astro-serif">Vedic Logo Designing Packages</h2>
+    </div>
+
+    <div class="packages-grid">
+      <!-- Package 1 -->
+      <div class="package-card">
+        <div class="package-header">
+          <h3>Aura Package</h3>
+          <p>Ideal for startups needing quick alignment</p>
+          <div class="package-price">₹4,999 <span>/ fixed</span></div>
+        </div>
+        <ul class="package-features">
+          <li>1 Vedic Logo Concept</li>
+          <li>Ruling Planet Color Scheme</li>
+          <li>Glyph Art Recommendation</li>
+          <li>Scalable Vector Formats</li>
+        </ul>
+        <a href="#consultation-form" class="package-btn package-btn-outline select-pkg" data-pkg="Aura Package">Get Started</a>
+      </div>
+
+      <!-- Package 2 -->
+      <div class="package-card popular">
+        <div class="popular-badge">Most Auspicious</div>
+        <div class="package-header">
+          <h3>Dharma Package</h3>
+          <p>Complete brand layout & stationery details</p>
+          <div class="package-price">₹9,999 <span>/ fixed</span></div>
+        </div>
+        <ul class="package-features">
+          <li>2 Auspicious Logo Concepts</li>
+          <li>Sacred Geometry / Mandala Base</li>
+          <li>Business Card & Letterhead Layouts</li>
+          <li>Planetary Branding Analysis PDF</li>
+          <li>Social Media Kit (Profile & Covers)</li>
+        </ul>
+        <a href="#consultation-form" class="package-btn package-btn-filled select-pkg" data-pkg="Dharma Package">Get Started</a>
+      </div>
+
+      <!-- Package 3 -->
+      <div class="package-card">
+        <div class="package-header">
+          <h3>Nirvana Package</h3>
+          <p>Ultimate spiritual transformation kit</p>
+          <div class="package-price">₹19,999 <span>/ fixed</span></div>
+        </div>
+        <ul class="package-features">
+          <li>3 Custom Logo Concepts</li>
+          <li>Website Layout Color Consulting</li>
+          <li>Custom Astrological Brand Signature</li>
+          <li>Auspicious Dates Selection Report</li>
+          <li>Occult & Symbol Placement Guide</li>
+        </ul>
+        <a href="#consultation-form" class="package-btn package-btn-outline select-pkg" data-pkg="Nirvana Package">Get Started</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== FOOTER SECTION ===== -->
   <footer class="footer-section">
     <!-- Background Decor Blurs -->
@@ -278,14 +755,15 @@
     </div>
   </footer>
 
+  <!-- JS SCRIPTS -->
   <script>
-    // Set current year in footer
+    // Set current year in footer dynamically
     const yearEl = document.getElementById('current-year');
     if (yearEl) {
       yearEl.textContent = new Date().getFullYear();
     }
 
-    // Back to top
+    // Back to top button smoothness
     const backToTop = document.getElementById('backToTopBtn');
     if (backToTop) {
       backToTop.addEventListener('click', function (e) {
@@ -293,9 +771,31 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
+
+    // Handle Astro form submission
+    function handleAstroSubmit() {
+      alert("Auspicious Analysis Initiated! Our Vedic Logo scholars will reach out to you within 24 hours with your detailed Horoscope Brand Recommendation report.");
+      document.getElementById('astroConsultationForm').reset();
+    }
   </script>
 
+  <!-- INQUIRY POPUP INJECTION -->
   <script src="inquiry-popup.js"></script>
+
+  <script>
+    // Handle select package button click to populate the inquiry modal
+    document.querySelectorAll('.select-pkg').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const pkgName = btn.getAttribute('data-pkg');
+        // If popup script is loaded
+        if (typeof openInquiryModal === 'function') {
+          e.preventDefault();
+          openInquiryModal('Vedic Logo - ' + pkgName);
+        }
+      });
+    });
+  </script>
+
 </body>
 
 </html>
