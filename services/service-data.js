@@ -128,8 +128,8 @@ const services = {
   "custom-software-development": {
     title: "Custom Software Development",
     eyebrow: "Enterprise Solutions",
-    image: "../assets/svc_webdev.jpg",
-    bannerImage: "../assets/svc_webdev.jpg",
+    image: "../assets/software.png",
+    bannerImage: "../assets/software.png",
     intro: "We build custom, scalable software, ERPs, CRM systems, and mobile applications tailored to automate your business workflows.",
     description: "Our custom software development service provides end-to-end solutions for your business. We analyze your requirements, design database structures, architect secure APIs, build intuitive dashboards, and integrate custom APIs. Whether you need a SaaS application, a CRM, an ERP, or a custom desktop/mobile app, we ensure the final product is secure, fast, and scalable.",
     heroKeyPoints: ["Secure & Scalable Architecture", "Custom Workflows & Integrations", "Native & Cross-Platform Support"],
