@@ -272,16 +272,6 @@
               </select>
             </div>
 
-            <!-- Budget Range selector (Button box) -->
-            <div class="contact-form-group">
-              <label>Estimated Project Budget</label>
-              <input type="hidden" id="projectBudget" value="Under $1K" />
-              <div class="contact-budget-container">
-                <div class="contact-budget-btn active" data-value="Under $1K">Under $1K</div>
-                <div class="contact-budget-btn" data-value="$1K - $5K">$1K - $5K</div>
-                <div class="contact-budget-btn" data-value="$1000+">$1000+</div>
-              </div>
-            </div>
 
             <!-- Message -->
             <div class="contact-form-group">
@@ -453,18 +443,6 @@
   </footer>
 
   <script>
-    // Budget selector click toggle
-    const budgetBtns = document.querySelectorAll('.contact-budget-btn');
-    const budgetInput = document.getElementById('projectBudget');
-
-    budgetBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        budgetBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        budgetInput.value = btn.getAttribute('data-value');
-      });
-    });
-
     // Form submit intercept
     const contactForm = document.getElementById('contactInquiryForm');
     const successModal = document.getElementById('contactSuccessModal');
@@ -481,7 +459,6 @@
         const name = document.getElementById('fullName').value;
         const email = document.getElementById('emailAddress').value;
         const service = document.getElementById('serviceCategory').value;
-        const budget = budgetInput.value;
         const message = document.getElementById('message').value;
 
         fetch("https://api.web3forms.com/submit", {
@@ -495,7 +472,6 @@
             name: name,
             email: email,
             service: service,
-            budget: budget,
             message: message,
             from_name: "Creative Corner Contact Page"
           })
@@ -510,11 +486,6 @@
               successModal.classList.add('active');
             }
             contactForm.reset();
-
-            // Reset budget buttons
-            budgetBtns.forEach(b => b.classList.remove('active'));
-            budgetBtns[0].classList.add('active');
-            budgetInput.value = budgetBtns[0].getAttribute('data-value');
           } else {
             alert("Something went wrong. Please try again.");
           }
