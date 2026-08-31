@@ -40,6 +40,7 @@
     display:flex;align-items:center;justify-content:center;margin:0 auto 18px;color:#fff;font-size:28px;}
   @media(max-width:520px){.iq-modal{padding:24px 20px;}.iq-title{font-size:21px;}}
   body.iq-lock{overflow:hidden;}
+  @keyframes iq-rotate { 100% { transform: rotate(360deg); } }
   `;
 
   function buildModal() {
@@ -132,10 +133,104 @@
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      formWrap.style.display = 'none';
-      success.classList.add('show');
-      form.reset();
+      var submitBtn = form.querySelector('.iq-submit');
+      var originalBtnText = submitBtn.innerHTML;
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = 'Sending... <svg width="16" height="16" viewBox="0 0 50 50" style="animation: iq-rotate 2s linear infinite; margin-left: 8px; display: inline-block; vertical-align: middle;"><circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" style="stroke-dasharray: 80, 200; stroke-dashoffset: 0;"></circle></svg>';
+
+      var nameVal = form.querySelector('#iqName').value;
+      var emailVal = form.querySelector('#iqEmail').value;
+      var serviceVal = form.querySelector('#iqService').value;
+      var messageVal = form.querySelector('#iqMessage').value;
+
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "55c7b3be-a064-4596-b75a-0d45095f4360",
+          name: nameVal,
+          email: emailVal,
+          service: serviceVal,
+          message: messageVal,
+          from_name: "Creative Corner Hub Inquiry"
+        })
+      })
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        if (data.success) {
+          formWrap.style.display = 'none';
+          success.classList.add('show');
+          form.reset();
+        } else {
+          alert("Something went wrong. Please try again.");
+        }
+      })
+      .catch(function(err) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnText;
+        alert("Connection error. Please try again.");
+      });
     });
+
+    // Handle hardcoded service page inquiry modal forms if present
+    var serviceForm = document.getElementById('modal-inquiry-form');
+    if (serviceForm) {
+      serviceForm.removeAttribute('onsubmit'); // Remove inline submission to prevent conflicts
+      serviceForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var submitBtn = serviceForm.querySelector('.modal-submit-btn');
+        var originalBtnText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = 'Sending... <svg width="16" height="16" viewBox="0 0 50 50" style="animation: iq-rotate 2s linear infinite; margin-left: 8px; display: inline-block; vertical-align: middle;"><circle cx="25" cy="25" r="20" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" style="stroke-dasharray: 80, 200; stroke-dashoffset: 0;"></circle></svg>';
+
+        var nameVal = document.getElementById('modal-name').value;
+        var phoneVal = document.getElementById('modal-phone').value;
+        var emailVal = document.getElementById('modal-email').value;
+        var serviceVal = document.getElementById('modal-service').value;
+        var messageVal = document.getElementById('modal-msg').value;
+
+        fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: JSON.stringify({
+            access_key: "55c7b3be-a064-4596-b75a-0d45095f4360",
+            name: nameVal,
+            email: emailVal,
+            phone: phoneVal,
+            service: serviceVal,
+            message: messageVal,
+            from_name: "Creative Corner Service Page Inquiry"
+          })
+        })
+        .then(function(res) { return res.json(); })
+        .then(function(data) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+          if (data.success) {
+            var formStateEl = document.getElementById('modal-form-state');
+            var successStateEl = document.getElementById('modal-success-state');
+            if (formStateEl) formStateEl.style.display = 'none';
+            if (successStateEl) successStateEl.style.display = 'flex';
+            serviceForm.reset();
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        })
+        .catch(function(err) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+          alert("Connection error. Please try again.");
+        });
+      });
+    }
 
     // Inject floating WhatsApp & Call buttons CSS
     if (!document.getElementById('ccFloatingStyles')) {
