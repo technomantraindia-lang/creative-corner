@@ -7846,3 +7846,99 @@ textarea.modal-form-input {
     padding: 12px;
   }
 }
+
+/* ============================================
+   PREMIUM LOGO PROMO SECTION
+   ============================================ */
+.logo-promo-section {
+  padding: 100px 24px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-top: 1px solid #e8eaef;
+  border-bottom: 1px solid #e8eaef;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.logo-promo-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-promo-content {
+  flex: 1;
+  max-width: 550px;
+}
+.logo-promo-collage {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 500px;
+  position: relative;
+}
+.logo-promo-card {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02), 0 1px 3px rgba(0, 0, 0, 0.01);
+  transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+}
+.logo-promo-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.08);
+}
+.logo-promo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.4s ease;
+}
+.logo-promo-card:hover img {
+  transform: scale(1.04);
+}
+
+@media (max-width: 992px) {
+  .logo-promo-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+  .logo-promo-content {
+    max-width: 100%;
+  }
+  .logo-promo-content ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto 30px !important;
+  }
+  .logo-promo-collage {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.logo-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.logo-explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35) !important;
+}
+
+

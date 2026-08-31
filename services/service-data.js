@@ -104,27 +104,6 @@ const services = {
       { icon: "support", title: "Final Proofing", text: "We check spelling, alignment, contact details, and layout before final delivery." }
     ]
   },
-  "id-card-design": {
-    title: "ID Card Design",
-    eyebrow: "Corporate Identity",
-    image: "../id_card_design.jpg",
-    bannerImage: "../id_card_design.jpg",
-    intro: "Professional ID card designs for companies, schools, events, hospitals, and organizations.",
-    description: "A good ID card should look official, be easy to read, and represent your organization cleanly. We design front and back ID cards with employee or student information, photo placement, QR/barcode space, department details, and brand styling. The final layout is practical for printing, lamination, and daily use.",
-    heroKeyPoints: ["Front and back design", "Photo and QR space", "Professional identity layout"],
-    overviewHighlights: [
-      { icon: "brand", title: "Official Brand Look", text: "We keep the ID card aligned with your organization colors, logo, and identity." },
-      { icon: "layout", title: "Readable Information", text: "Name, designation, ID number, and contact details are arranged clearly." }
-    ],
-    inclusions: [
-      { icon: "search", title: "Format Discussion", text: "We confirm card size, orientation, details, and usage before starting." },
-      { icon: "layout", title: "Front Layout", text: "The front side includes photo, name, designation, ID number, and branding." },
-      { icon: "brand", title: "Back Layout", text: "The back side can include address, terms, emergency contact, QR, or barcode." },
-      { icon: "design", title: "Clean Visual Design", text: "We design a neat, professional card that is easy to read and carry." },
-      { icon: "vector", title: "Print-Ready Files", text: "Final artwork is delivered in high-quality format for printing." },
-      { icon: "support", title: "Data Placement Support", text: "We guide how employee/student data can be added cleanly for multiple cards." }
-    ]
-  },
   "menu-card-design": {
     title: "Menu Card Design",
     eyebrow: "Food & Hospitality",
@@ -139,74 +118,32 @@ const services = {
     ],
     inclusions: [
       { icon: "search", title: "Menu Content Review", text: "We organize dishes, sections, add-ons, pricing, and special highlights." },
-      { icon: "layout", title: "Category Layout", text: "Breakfast, snacks, mains, beverages, combos, and offers are placed clearly." },
+      { icon: "layout", title: "Category Layout", text: "Breakfast, snacks, mains, beverages, combos, and offers are placed cleanly." },
       { icon: "design", title: "Premium Styling", text: "The design is matched with your restaurant, cafe, or cloud kitchen personality." },
       { icon: "brand", title: "Brand Integration", text: "Logo, colors, and food photography style are used consistently." },
       { icon: "responsive", title: "Digital Menu Version", text: "We prepare a version suitable for QR menus, WhatsApp, and online sharing." },
       { icon: "vector", title: "Print-Ready Export", text: "Final menu files are delivered in high-quality format for printing." }
     ]
   },
-  "name-plate-design": {
-    title: "Name Plate Design",
-    eyebrow: "Signage Design",
-    image: "../name_plate_design.jpg",
-    bannerImage: "../name_plate_design.jpg",
-    intro: "Elegant name plate designs for offices, homes, clinics, shops, desks, and professional spaces.",
-    description: "Name plates create a strong first impression. We design clean and premium name plates that suit your material, size, location, and brand personality. Whether you need acrylic, metal, wooden, glass, or printed signage, we create layouts that are readable, balanced, and production-friendly.",
-    heroKeyPoints: ["Material-friendly layout", "Readable premium typography", "Home and office use"],
+  "custom-software-development": {
+    title: "Custom Software Development",
+    eyebrow: "Enterprise Solutions",
+    image: "../svc_webdev.jpg",
+    bannerImage: "../svc_webdev.jpg",
+    intro: "We build custom, scalable software, ERPs, CRM systems, and mobile applications tailored to automate your business workflows.",
+    description: "Our custom software development service provides end-to-end solutions for your business. We analyze your requirements, design database structures, architect secure APIs, build intuitive dashboards, and integrate custom APIs. Whether you need a SaaS application, a CRM, an ERP, or a custom desktop/mobile app, we ensure the final product is secure, fast, and scalable.",
+    heroKeyPoints: ["Secure & Scalable Architecture", "Custom Workflows & Integrations", "Native & Cross-Platform Support"],
     overviewHighlights: [
-      { icon: "design", title: "Elegant First Impression", text: "We focus on clean typography, spacing, and layout so the name plate looks premium." },
-      { icon: "vector", title: "Production-Ready Design", text: "Artwork is planned according to material, size, engraving, cutting, or print needs." }
+      { icon: "user-target", title: "Tailored Solutions", text: "We build software around your unique business operations, making sure it integrates with your existing tools." },
+      { icon: "chart-results", title: "Performance & Speed", text: "Optimized database structures and clean code ensure fast response times even under heavy loads." }
     ],
     inclusions: [
-      { icon: "search", title: "Size & Material Planning", text: "We confirm whether the plate is acrylic, metal, wood, glass, or printed." },
-      { icon: "layout", title: "Text Arrangement", text: "Names, designations, logos, flat numbers, and address details are placed clearly." },
-      { icon: "design", title: "Premium Styling", text: "We create elegant layouts with strong spacing, borders, and decorative balance." },
-      { icon: "brand", title: "Logo Placement", text: "Business or personal logos are integrated without disturbing readability." },
-      { icon: "vector", title: "Cut/Print Files", text: "Final artwork is delivered in a format suitable for production." },
-      { icon: "support", title: "Mockup Preview", text: "We provide a preview so you can understand the final look before making it." }
-    ]
-  },
-  "tshirt-design": {
-    title: "T Shirt Designing",
-    eyebrow: "Merchandise Design",
-    image: "../tshirt_design.jpg",
-    bannerImage: "../tshirt_design.jpg",
-    intro: "Creative t-shirt graphics for brands, teams, events, uniforms, and merchandise collections.",
-    description: "T-shirt design needs artwork that looks good on fabric, supports your message, and feels wearable. We create typography, graphics, illustration-style artwork, event tees, brand merch, team shirts, and uniform graphics with print-friendly file preparation and mockup previews.",
-    heroKeyPoints: ["Wearable creative artwork", "Print-ready graphic files", "Brand merch and event tees"],
-    overviewHighlights: [
-      { icon: "design", title: "Custom Artwork", text: "We create designs that match your theme, audience, and purpose." },
-      { icon: "vector", title: "Print-Friendly Files", text: "Artwork is prepared for screen print, DTF, sublimation, or digital printing." }
-    ],
-    inclusions: [
-      { icon: "search", title: "Theme Discussion", text: "We understand your concept, audience, shirt color, and printing method." },
-      { icon: "design", title: "Graphic Design", text: "We create typography, badges, icons, or illustration-style graphics for your tee." },
-      { icon: "layout", title: "Placement Planning", text: "Front, back, sleeve, or pocket placements are planned properly." },
-      { icon: "brand", title: "Brand or Team Identity", text: "Logos, slogans, and campaign messages are integrated naturally." },
-      { icon: "vector", title: "Print-Ready Artwork", text: "Final artwork is delivered in high-quality format for production." },
-      { icon: "support", title: "Mockup Preview", text: "You get previews to see how the design looks on an actual t-shirt." }
-    ]
-  },
-  "explainer-video": {
-    title: "Explainer Video",
-    eyebrow: "Motion Graphics",
-    image: "../explainer_video.jpg",
-    bannerImage: "../explainer_video.jpg",
-    intro: "Engaging explainer videos that make your product, service, or idea simple to understand.",
-    description: "Explainer videos help your audience understand your offer quickly through story, visuals, voice, and motion. We plan the concept, script flow, storyboard direction, visual style, and animation structure so your message feels clear, professional, and memorable for websites, ads, presentations, and social media.",
-    heroKeyPoints: ["Clear script flow", "Storyboard and visual direction", "Social and website ready"],
-    overviewHighlights: [
-      { icon: "user-target", title: "Simple Communication", text: "We break complex ideas into a short, easy-to-follow visual story." },
-      { icon: "chart-results", title: "Conversion Support", text: "Videos are structured to explain benefits, build trust, and encourage inquiry." }
-    ],
-    inclusions: [
-      { icon: "search", title: "Concept Planning", text: "We understand your product, customer problem, and key message before scripting." },
-      { icon: "layout", title: "Script Structure", text: "We arrange the video flow with intro, problem, solution, benefits, and call to action." },
-      { icon: "design", title: "Storyboard Direction", text: "Scenes are planned visually so the animation or edit feels smooth." },
-      { icon: "brand", title: "Brand Visual Style", text: "Colors, icons, characters, and graphics are matched with your brand identity." },
-      { icon: "speed", title: "Motion & Timing", text: "We guide pacing, transitions, and timing so the video stays engaging." },
-      { icon: "support", title: "Export Support", text: "Final video can be prepared for website, presentation, YouTube, and social media use." }
+      { icon: "search", title: "Business Analysis", text: "We deep dive into your workflows to plan system modules, database relationships, and user roles." },
+      { icon: "design", title: "UI/UX Prototyping", text: "We design wireframes and interactive mockups for panels, dashboards, and mobile screens." },
+      { icon: "globe", title: "API & Backend Dev", text: "Robust server architectures with secure RESTful/GraphQL APIs and fast database setups." },
+      { icon: "brand", title: "Frontend Engineering", text: "Clean, interactive client-side interfaces built using modern frameworks for a fast user experience." },
+      { icon: "speed", title: "Testing & Quality Check", text: "Rigorous security checks, automated tests, and performance optimization before deployment." },
+      { icon: "support", title: "Cloud Deploy & Maintenance", text: "Configuration of cloud hosting (AWS, GCP, DigitalOcean) and ongoing updates and support." }
     ]
   }
 };

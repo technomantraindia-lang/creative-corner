@@ -65,9 +65,7 @@
               '<select id="iqService">' +
                 '<option>Website Design</option><option>Packaging Design</option>' +
                 '<option>Brochure Design</option><option>Flyer Designing</option>' +
-                '<option>Banner Designing</option><option>ID Card Design</option>' +
-                '<option>Menu Card Design</option><option>Name Plate Design</option>' +
-                '<option>T Shirt Designing</option><option>Explainer Video</option>' +
+                '<option>Banner Designing</option><option>Menu Card Design</option>' +
                 '<option>Other</option></select></div>' +
             '<div class="iq-group"><label for="iqMessage">Project Details</label>' +
               '<textarea id="iqMessage" placeholder="Describe your project..." required></textarea></div>' +
