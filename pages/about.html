@@ -254,6 +254,158 @@
     </div>
   </section>
 
+  <!-- ===== AWARDS SECTION ===== -->
+  <style>
+    .about-awards-section {
+      padding: 80px 0;
+      background: #0b0d13;
+      position: relative;
+      overflow: hidden;
+    }
+    .award-glow-decor {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, rgba(99, 102, 241, 0) 70%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .about-awards-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 5%;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+    }
+    .award-image-col {
+      flex: 0 0 40%;
+      max-width: 450px;
+    }
+    .award-text-col {
+      flex: 1;
+    }
+    .award-image-wrapper {
+      border-radius: 16px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+      backdrop-filter: blur(10px);
+      transition: all 0.4s ease;
+    }
+    .award-image-wrapper:hover {
+      transform: translateY(-5px);
+      border-color: rgba(99, 102, 241, 0.3);
+      box-shadow: 0 30px 60px rgba(99, 102, 241, 0.15);
+    }
+    .award-image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      filter: drop-shadow(0 10px 15px rgba(0,0,0,0.4));
+      transition: transform 0.4s ease;
+    }
+    .award-image-wrapper:hover .award-image {
+      transform: scale(1.03);
+    }
+    
+    .award-desc {
+      color: #a0a0a0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .award-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .award-highlight-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .award-highlight-icon {
+      color: #6366f1;
+      margin-top: 3px;
+    }
+    .award-highlight-text h5 {
+      color: #fff;
+      margin: 0 0 5px 0;
+      font-size: 1.1rem;
+    }
+    .award-highlight-text p {
+      color: #999;
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    
+    @media (max-width: 900px) {
+      .about-awards-container {
+        flex-direction: column;
+        text-align: left;
+        gap: 40px;
+      }
+      .award-image-col {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  </style>
+  <section class="about-awards-section">
+    <div class="award-glow-decor"></div>
+    <div class="about-awards-container">
+      
+      <!-- Left side: Image -->
+      <div class="award-image-col">
+        <div class="award-image-wrapper">
+          <img src="../assets/award.png" alt="Awards and Recognition" class="award-image" />
+        </div>
+      </div>
+      
+      <!-- Right side: Text -->
+      <div class="award-text-col">
+        <span class="about-story-subtitle">Recognition</span>
+        <h2 class="about-story-title" style="margin-bottom: 20px;">Awards & Achievements</h2>
+        <p class="award-desc">
+          We take pride in our commitment to excellence. Over the years, our dedication to crafting premium brand identities and innovative digital experiences has been recognized by industry leaders.
+        </p>
+        
+        <div class="award-highlights">
+          <div class="award-highlight-item">
+            <div class="award-highlight-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="award-highlight-text">
+              <h5>Industry Excellence</h5>
+              <p>Recognized for outstanding creativity and strategic brand development across multiple platforms.</p>
+            </div>
+          </div>
+          <div class="award-highlight-item">
+            <div class="award-highlight-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="award-highlight-text">
+              <h5>Trusted by 100+ Brands</h5>
+              <p>Consistently delivering high-quality, impactful results that drive real business growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
   <!-- ===== CORE VALUES SECTION ===== -->
   <section class="about-values-section">
     <div class="about-values-container">
