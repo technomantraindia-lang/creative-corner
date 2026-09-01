@@ -3343,12 +3343,14 @@ body.nav-lock {
 }
 
 .cta-btn-icon {
-  transform: rotate(-45deg);
+  width: 20px;
+  height: 20px;
+  transform: none;
   transition: transform 0.3s ease;
 }
 
 .cta-btn:hover .cta-btn-icon {
-  transform: rotate(-45deg) translate(2px, -2px);
+  transform: scale(1.08);
 }
 
 .cta-btn-outline {
@@ -3901,7 +3903,7 @@ body.nav-lock {
    ============================================ */
 .footer-section {
   background: linear-gradient(135deg, #070d19 0%, #0d1527 100%);
-  padding: 96px 0 40px;
+  padding: 72px 0 40px;
   position: relative;
   overflow: hidden;
   color: #94a3b8;
@@ -4099,7 +4101,7 @@ body.nav-lock {
   display: grid;
   grid-template-columns: 1.8fr 1.2fr 1fr 1.2fr;
   gap: 60px;
-  padding: 64px 0;
+  padding: 0 0 56px;
 }
 
 .footer-links-col {
@@ -7940,5 +7942,3 @@ textarea.modal-form-input {
   transform: translateY(-2px);
   box-shadow: 0 15px 30px rgba(79, 70, 229, 0.35) !important;
 }
-
-

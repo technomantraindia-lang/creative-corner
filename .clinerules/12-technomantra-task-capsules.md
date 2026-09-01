@@ -20,8 +20,8 @@ The extension refreshes this file automatically. Prefer its concise state over o
 - Project: Creative Corner
 - Framework: html-static
 - Developer mode: smart
-- Model mode: paid/manual
-- Active file: services/service-detail.html
+- Model mode: eco
+- Active file: services/website-design.html
 - Objective: mujhe ek service page create Website Design
 Packaging Design
 Brochure Design
@@ -50,15 +50,15 @@ is sabha me header or footer same to same mujhe home page wala chahiye ha
 - services/service-detail.css
 
 ## Recent files in this workspace/window
+- services/website-design.html
+- index.html
 - services/service-detail.html
 - style.css
 - contact.html
 - about.html
-- index.html
 - astrology.html
 - add-popup-script.ps1
 - inquiry-popup.js
-- services/website-design.html
 - services/service-data.js
 - services/service-detail.css
 
